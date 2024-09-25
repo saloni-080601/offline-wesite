@@ -120,7 +120,7 @@ function CoursesDetails() {
 
     return (
       <Container sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" gutterBottom >
           {course.title}
         </Typography>
         <TopicsComponent topics={course.topics} courseId={course.id} />

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { Button, Card, Grid, Typography, CardContent, CardMedia } from '@mui/material';
 
 const StyledCard = styled(Card)(({ theme }) => ({
-    transition: "transform 0.3s, box-shadow 0.3s",    
+    transition: "transform 0.3s, box-shadow 0.3s",   
+    marginTop:"40px", 
 }));
 const TopicsComponent = ({ topics, courseId }) => {
     return (
