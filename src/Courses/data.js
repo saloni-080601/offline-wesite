@@ -16,6 +16,7 @@ export const courses = [
             qa: [
               { question: "What does HTML stand for?", answer: "HTML stands for Hypertext Markup Language." },
               { question: "Why is HTML important?", answer: "HTML is crucial for building web pages and applications." },
+              
             ],
           },
         },
