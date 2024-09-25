@@ -63,23 +63,14 @@ function CoursesDetails() {
                 sx={{
                   position: "relative",
                   overflow: "hidden",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
-                  },
+               
                 }}
               >
                 <CardMedia
                   component="img"
                   height="200"
                   image={course.image}
-                  sx={{
-                    transition: "transform 0.3s ease",
-                    "&:hover": {
-                      transform: "scale(1.1)",
-                    },
-                  }}
+                 
                 />
                 <CardContent>
                   <Typography variant="h5">{course.title}</Typography>
@@ -96,10 +87,7 @@ function CoursesDetails() {
                       borderRadius: 2,
                       borderColor: "#ff4081",
                       color: "#ff4081",
-                      "&:hover": {
-                        borderColor: "#ff80ab",
-                        backgroundColor: "rgba(255, 64, 129, 0.1)",
-                      },
+                     
                     }}
                   >
                     View Details
@@ -135,7 +123,6 @@ function CoursesDetails() {
         <Typography variant="h4" gutterBottom>
           {course.title}
         </Typography>
-        {/* Pass only the topics of the current course */}
         <TopicsComponent topics={course.topics} courseId={course.id} />
         <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
           Back to Courses

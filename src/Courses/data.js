@@ -33,7 +33,6 @@ export const courses = [
             ],
           },
         },
-        // Additional topics omitted for brevity
         {
           id: 19,
           title: "HTML File Path",
@@ -70,7 +69,6 @@ export const courses = [
             ],
           },
         },
-        // Additional topics omitted for brevity
         {
           id: 5,
           title: "CSS Box Model",
@@ -107,7 +105,6 @@ export const courses = [
             ],
           },
         },
-        // Additional topics omitted for brevity
         {
           id: 5,
           title: "Asynchronous JavaScript",
