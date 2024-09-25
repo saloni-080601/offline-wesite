@@ -58,36 +58,36 @@ function CoursesDetails() {
         </Typography>
         <Grid container spacing={4} sx={{ mt: 3 }}>
           {courses.map((course) => (
-            <Grid item xs={12} sm={6} md={4} key={course.id}>
+            <Grid item xs={12} sm={6} md={3} key={course.id}>
               <Card
                 sx={{
-                  position: "relative",
-                  overflow: "hidden",
-               
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%', 
+                  width: '100%',
+                  overflow: 'hidden',
                 }}
               >
                 <CardMedia
                   component="img"
-                  height="200"
+                  height="160" 
                   image={course.image}
-                 
+                  sx={{ objectFit: 'cover' }} 
                 />
-                <CardContent>
+                <CardContent sx={{ flexGrow: 1 }}> 
                   <Typography variant="h5">{course.title}</Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {course.description}
-                  </Typography>
+               
                   <Button
                     variant="outlined"
                     color="secondary"
                     component={Link}
-                    to={`/course/${course.id}`} // Link to course details
+                    to={`/course/${course.id}`}
                     sx={{
                       mt: 2,
                       borderRadius: 2,
                       borderColor: "#ff4081",
                       color: "#ff4081",
-                     
+                      width: '100%', 
                     }}
                   >
                     View Details
