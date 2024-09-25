@@ -1,25 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
   CardMedia,
   Typography,
   Grid,
-} from "@mui/material";
-
-import TopicsComponent from "./TopicCard";
-import TopicDetails from "./TopicDetails";
-import { courses } from "./data";
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  useParams,
-} from "react-router-dom";
-
-import {
   Button,
   Container,
   CssBaseline,
@@ -27,6 +12,9 @@ import {
   createTheme,
 } from "@mui/material";
 
+import TopicsComponent from "./TopicCard";
+import TopicDetails from "./TopicDetails";
+import { courses } from "./data";
 
 const theme = createTheme({
   palette: {
@@ -48,8 +36,29 @@ const theme = createTheme({
 });
 
 function CoursesDetails() {
-  const getCourseById = (id) => courses.find((course) => course.id === parseInt(id));
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState(null);
 
+  const handleCourseSelect = (courseId) => {
+    const course = courses.find((c) => c.id === courseId);
+    setSelectedCourse(course);
+    setSelectedTopic(null); 
+  };
+
+  const handleTopicSelect = (topicId) => {
+    setSelectedTopic(topicId);
+  };
+
+  const handleBackToCourses = () => {
+    setSelectedCourse(null);
+    setSelectedTopic(null);
+  };
+
+  const handleBackToCourseDetails = () => {
+    setSelectedTopic(null);
+  };
+
+  // Main Course List
   const CourseList = () => {
     return (
       <Container sx={{ mt: 4 }}>
@@ -80,8 +89,7 @@ function CoursesDetails() {
                   <Button
                     variant="outlined"
                     color="secondary"
-                    component={Link}
-                    to={`/course/${course.id}`}
+                    onClick={() => handleCourseSelect(course.id)}
                     sx={{
                       mt: 2,
                       borderRadius: 2,
@@ -101,17 +109,15 @@ function CoursesDetails() {
     );
   };
 
+  // Course Details
   const CourseDetails = () => {
-    const { id } = useParams();
-    const course = getCourseById(id);
-
-    if (!course) {
+    if (!selectedCourse) {
       return (
         <Container sx={{ mt: 4 }}>
           <Typography variant="h5" color="error">
             Course not found!
           </Typography>
-          <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
+          <Button variant="outlined" color="primary" onClick={handleBackToCourses} sx={{ mt: 2 }}>
             Back to Courses
           </Button>
         </Container>
@@ -120,12 +126,51 @@ function CoursesDetails() {
 
     return (
       <Container sx={{ mt: 4 }}>
-        <Typography variant="h4" gutterBottom >
-          {course.title}
+        <Typography variant="h4" gutterBottom>
+          {selectedCourse.title}
         </Typography>
-        <TopicsComponent topics={course.topics} courseId={course.id} />
-        <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
+        <TopicsComponent topics={selectedCourse.topics} onSelectTopic={handleTopicSelect} />
+        <Button variant="outlined" color="primary" onClick={handleBackToCourses} sx={{ mt: 2 }}>
           Back to Courses
+        </Button>
+      </Container>
+    );
+  };
+
+  const TopicWrapper = () => {
+    if (!selectedCourse) {
+      return (
+        <Container sx={{ mt: 4 }}>
+          <Typography variant="h5" color="error">
+            Course not found!
+          </Typography>
+          <Button variant="outlined" color="primary" onClick={handleBackToCourses} sx={{ mt: 2 }}>
+            Back to Courses
+          </Button>
+        </Container>
+      );
+    }
+
+    const topic = selectedCourse.topics.find((t) => t.id === selectedTopic);
+
+    if (!topic) {
+      return (
+        <Container sx={{ mt: 4 }}>
+          <Typography variant="h5" color="error">
+            Topic not found!
+          </Typography>
+          <Button variant="outlined" color="primary" onClick={handleBackToCourseDetails} sx={{ mt: 2 }}>
+            Back to Course Details
+          </Button>
+        </Container>
+      );
+    }
+
+    return (
+      <Container sx={{ mt: 4 }}>
+        <TopicDetails topic={topic} />
+        <Button variant="outlined" color="primary" onClick={handleBackToCourseDetails} sx={{ mt: 2 }}>
+          Back to Course Details
         </Button>
       </Container>
     );
@@ -135,36 +180,16 @@ function CoursesDetails() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
-          <Routes>
-            <Route path="/" element={<CourseList />} />
-            <Route path="/course/:id" element={<CourseDetails />} />
-            <Route path="/course/:courseId/topic/:topicId" element={<TopicWrapper />} />
-          </Routes>
-        </Router>
+        {!selectedCourse ? (
+          <CourseList />
+        ) : selectedTopic ? (
+          <TopicWrapper />
+        ) : (
+          <CourseDetails />
+        )}
       </ThemeProvider>
     </div>
   );
 }
-
-const TopicWrapper = () => {
-  const { courseId } = useParams();
-  const course = courses.find((course) => course.id === parseInt(courseId));
-
-  if (!course) {
-    return (
-      <Container sx={{ mt: 4 }}>
-        <Typography variant="h5" color="error">
-          Course not found!
-        </Typography>
-        <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
-          Back to Courses
-        </Button>
-      </Container>
-    );
-  }
-
-  return <TopicDetails topics={course.topics} />;
-};
 
 export default CoursesDetails;

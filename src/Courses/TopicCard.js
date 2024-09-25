@@ -1,13 +1,13 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
 import { Button, Card, Grid, Typography, CardContent, CardMedia } from '@mui/material';
 
 const StyledCard = styled(Card)(({ theme }) => ({
-    transition: "transform 0.3s, box-shadow 0.3s",   
-    marginTop:"40px", 
+    transition: "transform 0.3s, box-shadow 0.3s",
+    marginTop: "40px",
 }));
-const TopicsComponent = ({ topics, courseId }) => {
+
+const TopicsComponent = ({ topics, onSelectTopic }) => {
     return (
         <Grid container spacing={4}>
             {topics.map((topic) => (
@@ -19,21 +19,18 @@ const TopicsComponent = ({ topics, courseId }) => {
                                 height="200"
                                 width="100%"
                                 sx={{
-                                    objectFit: 'cover', 
+                                    objectFit: 'cover',
                                     borderRadius: 2,
                                 }}
                                 image={topic.image}
                                 alt={topic.title}
                             />
-
                         )}
                         <CardContent>
                             <Typography variant="h5">{topic.title}</Typography>
-                           
                             <Button
                                 variant="outlined"
-                                component={Link}
-                                to={`/course/${courseId}/topic/${topic.id}`}
+                                onClick={() => onSelectTopic(topic.id)} 
                                 sx={{ mt: 2 }}
                             >
                                 View Topic Details
