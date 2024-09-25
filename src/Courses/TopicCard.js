@@ -29,9 +29,7 @@ const TopicsComponent = ({ topics, courseId }) => {
                         )}
                         <CardContent>
                             <Typography variant="h5">{topic.title}</Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {topic.description}
-                            </Typography>
+                           
                             <Button
                                 variant="outlined"
                                 component={Link}

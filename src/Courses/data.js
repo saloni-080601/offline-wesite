@@ -1,6 +1,6 @@
 import enlishspeaking from "./assets/english-speaking-course.jpeg";
 import css from "./assets/css.png";
-import javscript from "./assets/javascript_logo.png";
+import javascript from "./assets/javascript_logo.png";
 import react from "./assets/react.png";
 import python from "./assets/python-alt.png";
 import img1 from "./assets/if_else_5fc3176c7b.jpg";
@@ -70,7 +70,7 @@ export const courses = [
         id: 1,
         title: "CSS Selectors",
         description: "Learn about different CSS selectors.",
-        image:img4,
+        image: img4,
         content: {
           what: "CSS selectors are patterns used to select the elements you want to style.",
           why: "Selectors are crucial for targeting specific elements and applying styles to them.",
@@ -100,7 +100,7 @@ export const courses = [
     id: 3,
     title: "JavaScript Essentials",
     description: "Learn the core concepts of JavaScript.",
-    image: javscript,
+    image:  javascript,
     topics: [
       {
         id: 1,
@@ -117,10 +117,38 @@ export const courses = [
         },
       },
       {
+        id: 2,
+        title: "Loop and Variable Data Types",
+        description: "Understanding loops and variable data types in JavaScript.",
+        image: img3, // Replace with the appropriate image for this topic
+        content: {
+          what: "JavaScript provides different types of variables (let, const, var) and control structures like loops.",
+          why: "Loops allow you to execute a block of code multiple times, and understanding variable types is crucial for managing data effectively.",
+          qa: [
+            { question: "What are the different types of variables in JavaScript?", answer: "The main variable types are let, const, and var." },
+            { question: "What is a loop?", answer: "A loop is a control structure that repeats a block of code as long as a specified condition is true." },
+          ],
+        },
+      },
+      {
+        id: 3,
+        title: "Functions and Arrays",
+        description: "Mastering functions and array manipulation in JavaScript.",
+        image: img4, // Replace with the appropriate image for this topic
+        content: {
+          what: "Functions are reusable blocks of code, and arrays are used to store multiple values in a single variable.",
+          why: "Understanding functions and arrays is essential for writing efficient and organized code.",
+          qa: [
+            { question: "What is a function in JavaScript?", answer: "A function is a block of code designed to perform a particular task." },
+            { question: "What is an array?", answer: "An array is a data structure that can hold multiple values under a single name." },
+          ],
+        },
+      },
+      {
         id: 5,
         title: "Asynchronous JavaScript",
         description: "Understanding promises and async/await.",
-        image: img1,
+        image: img2,
         content: {
           what: "Asynchronous JavaScript allows execution of code without blocking the main thread.",
           why: "It is crucial for handling tasks like network requests without freezing the user interface.",
@@ -142,7 +170,7 @@ export const courses = [
         id: 1,
         title: "Introduction to React",
         description: "Getting started with React.",
-        image: img2,
+        image: "https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png",
         content: {
           what: "React is a JavaScript library for building user interfaces.",
           why: "It allows developers to create large web applications that can change data, without reloading the page.",
@@ -164,7 +192,7 @@ export const courses = [
         id: 1,
         title: "Introduction to Node.js",
         description: "Getting started with server-side JavaScript.",
-        image:img5,
+        image: "https://cdn.iconscout.com/icon/free/png-256/nodejs-4-1175206.png",
         content: {
           what: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
           why: "It allows developers to use JavaScript to write server-side code.",
@@ -186,13 +214,83 @@ export const courses = [
         id: 1,
         title: "Introduction to Python",
         description: "Learn the basics of Python.",
-        image: "https://cdn.iconscout.com/icon/free/png-256/python-10-1175154.png",
+        image: img1,
         content: {
           what: "Python is an interpreted, high-level programming language.",
           why: "It is widely used for web development, data analysis, and automation.",
           qa: [
             { question: "What are Python lists?", answer: "Lists are used to store multiple items in a single variable." },
             { question: "What is a dictionary in Python?", answer: "A dictionary is a collection of key-value pairs." },
+          ],
+        },
+      },
+      {
+        id: 2,
+        title: "Data Types and Variables",
+        description: "Understand different data types and how to use variables.",
+        image: img5,
+        content: {
+          what: "Python has several built-in data types such as integers, floats, strings, and booleans.",
+          why: "Knowing data types is crucial for effective programming and data manipulation.",
+          qa: [
+            { question: "What is a variable in Python?", answer: "A variable is a reserved memory location to store values." },
+            { question: "What are the common data types in Python?", answer: "The common data types include int, float, str, and bool." },
+          ],
+        },
+      },
+      {
+        id: 3,
+        title: "Control Structures",
+        description: "Learn about conditional statements and loops.",
+        image: img3,
+        content: {
+          what: "Control structures allow you to dictate the flow of execution in your programs.",
+          why: "They are essential for making decisions and repeating actions.",
+          qa: [
+            { question: "What is an if statement?", answer: "An if statement is used to execute a block of code based on a condition." },
+            { question: "What is a for loop?", answer: "A for loop is used to iterate over a sequence (like a list or string)." },
+          ],
+        },
+      },
+      {
+        id: 4,
+        title: "Functions",
+        description: "Explore how to create and use functions in Python.",
+        image: img4,
+        content: {
+          what: "Functions are blocks of reusable code that perform a specific task.",
+          why: "They help in organizing code and reducing redundancy.",
+          qa: [
+            { question: "How do you define a function in Python?", answer: "You can define a function using the def keyword." },
+            { question: "What are parameters in functions?", answer: "Parameters are variables that are passed into a function." },
+          ],
+        },
+      },
+      {
+        id: 5,
+        title: "Lists and Tuples",
+        description: "Understand how to use lists and tuples for data storage.",
+        image: img5,
+        content: {
+          what: "Lists are mutable, ordered collections, while tuples are immutable.",
+          why: "Choosing the right data structure is vital for performance and functionality.",
+          qa: [
+            { question: "What is the difference between a list and a tuple?", answer: "Lists are mutable, whereas tuples are immutable." },
+            { question: "How do you access elements in a list?", answer: "You can access elements using their index, starting from 0." },
+          ],
+        },
+      },
+      {
+        id: 6,
+        title: "Dictionaries",
+        description: "Learn how to use dictionaries to store key-value pairs.",
+        image: img6,
+        content: {
+          what: "Dictionaries are mutable, unordered collections of key-value pairs.",
+          why: "They provide an efficient way to store and retrieve data.",
+          qa: [
+            { question: "How do you create a dictionary?", answer: "You can create a dictionary using curly braces {} or the dict() function." },
+            { question: "How do you access values in a dictionary?", answer: "You access values using their corresponding keys." },
           ],
         },
       },
