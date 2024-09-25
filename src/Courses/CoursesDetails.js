@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Card,
@@ -6,12 +5,12 @@ import {
   CardMedia,
   Typography,
   Grid,
-  useTheme,
 } from "@mui/material";
-import { styled } from "@mui/system";
+
 import TopicsComponent from "./TopicCard";
 import TopicDetails from "./TopicDetails";
-import {courses } from "./data";
+import { courses } from "./data";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -22,24 +21,11 @@ import {
 
 import {
   Button,
-  Box,
   Container,
   CssBaseline,
   ThemeProvider,
   createTheme,
 } from "@mui/material";
-
-const StyledCard = styled(Card)(({ theme }) => ({
-  transition: "transform 0.3s, box-shadow 0.3s",
-  "&:hover": {
-    transform: "scale(1.05)",
-    boxShadow: theme.shadows[10],
-  },
-}));
-<>
-  <TopicsComponent />
-  <TopicDetails />
-</>
 
 
 const theme = createTheme({
@@ -75,8 +61,8 @@ function CoursesDetails() {
             <Grid item xs={12} sm={6} md={4} key={course.id}>
               <Card
                 sx={{
-                  position: 'relative',
-                  overflow: 'hidden', // Ensures the overlay fits within the card
+                  position: "relative",
+                  overflow: "hidden",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                   "&:hover": {
                     transform: "scale(1.05)",
@@ -84,22 +70,17 @@ function CoursesDetails() {
                   },
                 }}
               >
-                <div className="image-overlay">
-                  <CardMedia
-                    component="img"
-                    height="200"
-                    image={course.image}
-                    sx={{
-                      transition: "transform 0.3s ease",
-                      "&:hover": {
-                        transform: "scale(1.1)",
-                      },
-                    }}
-                  />
-                  <div className="overlay">
-                    <div className="overlay-text">More Info</div>
-                  </div>
-                </div>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={course.image}
+                  sx={{
+                    transition: "transform 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.1)",
+                    },
+                  }}
+                />
                 <CardContent>
                   <Typography variant="h5">{course.title}</Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -113,8 +94,8 @@ function CoursesDetails() {
                     sx={{
                       mt: 2,
                       borderRadius: 2,
-                      borderColor: '#ff4081',
-                      color: '#ff4081',
+                      borderColor: "#ff4081",
+                      color: "#ff4081",
                       "&:hover": {
                         borderColor: "#ff80ab",
                         backgroundColor: "rgba(255, 64, 129, 0.1)",
@@ -154,7 +135,8 @@ function CoursesDetails() {
         <Typography variant="h4" gutterBottom>
           {course.title}
         </Typography>
-        <TopicsComponent topics={course.topics} courseId={course.id} /> {/* Pass courseId */}
+        {/* Pass only the topics of the current course */}
+        <TopicsComponent topics={course.topics} courseId={course.id} />
         <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
           Back to Courses
         </Button>
@@ -170,12 +152,32 @@ function CoursesDetails() {
           <Routes>
             <Route path="/" element={<CourseList />} />
             <Route path="/course/:id" element={<CourseDetails />} />
-            <Route path="/course/:courseId/topic/:topicId" element={<TopicDetails topics={courses.flatMap(course => course.topics)} />} />
+            <Route path="/course/:courseId/topic/:topicId" element={<TopicWrapper />} />
           </Routes>
         </Router>
       </ThemeProvider>
     </div>
   );
 }
+
+const TopicWrapper = () => {
+  const { courseId } = useParams();
+  const course = courses.find((course) => course.id === parseInt(courseId));
+
+  if (!course) {
+    return (
+      <Container sx={{ mt: 4 }}>
+        <Typography variant="h5" color="error">
+          Course not found!
+        </Typography>
+        <Button variant="outlined" color="primary" component={Link} to="/" sx={{ mt: 2 }}>
+          Back to Courses
+        </Button>
+      </Container>
+    );
+  }
+
+  return <TopicDetails topics={course.topics} />;
+};
 
 export default CoursesDetails;
