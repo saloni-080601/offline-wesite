@@ -1,3 +1,4 @@
+import "./App.css"
 import CoursesDetails from "./Courses/CoursesDetails"
 function App(){
   return(
