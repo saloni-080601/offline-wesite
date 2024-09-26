@@ -1,18 +1,17 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
 import { Button, Card, Grid, Typography, CardContent, CardMedia } from '@mui/material';
-
-const StyledCard = styled(Card)(({ theme }) => ({
-    transition: "transform 0.3s, box-shadow 0.3s",
-    marginTop: "40px",
-}));
 
 const TopicsComponent = ({ topics, onSelectTopic }) => {
     return (
-        <Grid container spacing={4}>
+        <Grid container spacing={4} sx={{mt:2}}>
             {topics.map((topic) => (
                 <Grid item xs={12} sm={6} md={3} key={topic.id}>
-                    <StyledCard>
+                    <Card
+                      sx={{
+                        height:"100%",
+                        width:"100%"
+                      }}
+                    >
                         {topic.image && (
                             <CardMedia
                                 component="img"
@@ -26,7 +25,9 @@ const TopicsComponent = ({ topics, onSelectTopic }) => {
                                 alt={topic.title}
                             />
                         )}
-                        <CardContent>
+                        <CardContent
+                         sx={{width:"100%",height:"100%"}} 
+                        >
                             <Typography variant="h5">{topic.title}</Typography>
                             <Button
                                 variant="outlined"
@@ -36,7 +37,7 @@ const TopicsComponent = ({ topics, onSelectTopic }) => {
                                 View Topic Details
                             </Button>
                         </CardContent>
-                    </StyledCard>
+                    </Card>
                 </Grid>
             ))}
         </Grid>

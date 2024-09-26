@@ -1,4 +1,3 @@
-import enlishspeaking from "./assets/english-speaking-course.jpeg";
 import css from "./assets/css.png";
 import javascript from "./assets/javascript_logo.png";
 import react from "./assets/react.png";
@@ -13,14 +12,14 @@ export const courses = [
   {
     id: 1,
     title: "HTML Basics",
-    description: "Learn the fundamentals of HTML.",
+    description: "Creating high-quality content for HTML involves a combination of structure, semantics, accessibility, and user experience. Here are some best practices to consider when crafting HTML content:",
     image: "https://c7.alamy.com/comp/DWJC6N/html-against-futuristic-black-and-blue-background-DWJC6N.jpg",
     topics: [
       {
         id: 1,
         title: "Introduction to HTML",
         description: "An overview of HTML.",
-        image: "https://cdn-icons-png.flaticon.com/512/1875/1875693.png",
+        image: img4,
         content: {
           what: "HTML (Hypertext Markup Language) is the standard markup language for creating web pages.",
           why: "It provides the structure of a webpage, allowing browsers to render it correctly.",
@@ -63,7 +62,7 @@ export const courses = [
   {
     id: 2,
     title: "CSS Essentials",
-    description: "Master the art of styling web pages.",
+    description: "Creating high-quality content in CSS involves understanding its capabilities, best practices, and techniques for effective styling. Here’s a comprehensive overview of best practices and key topics in CSS:",
     image: css,
     topics: [
       {
@@ -99,8 +98,8 @@ export const courses = [
   {
     id: 3,
     title: "JavaScript Essentials",
-    description: "Learn the core concepts of JavaScript.",
-    image:  javascript,
+    description: "Creating high-quality content about JavaScript involves covering its fundamental concepts, advanced features, best practices, and real-world applications. Here’s a comprehensive overview of essential topics and best practices for JavaScript:",
+    image: javascript,
     topics: [
       {
         id: 1,
@@ -163,14 +162,14 @@ export const courses = [
   {
     id: 4,
     title: "React Basics",
-    description: "Learn the fundamentals of React.js.",
+    description: "Creating high-quality content in React involves understanding its core concepts, best practices, and how to structure applications effectively. Here’s a comprehensive overview of best practices and key topics in React.js:",
     image: react,
     topics: [
       {
         id: 1,
-        title: "Introduction to React",
+        title: "Introduction to React.js",
         description: "Getting started with React.",
-        image: "https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png",
+        image: img1,
         content: {
           what: "React is a JavaScript library for building user interfaces.",
           why: "It allows developers to create large web applications that can change data, without reloading the page.",
@@ -180,13 +179,83 @@ export const courses = [
           ],
         },
       },
+      {
+        id: 2,
+        title: "Components and Props",
+        description: "Understanding the building blocks of React applications.",
+        image: img2,
+        content: {
+          what: "Components are the heart of a React application, allowing you to encapsulate logic and UI.",
+          why: "Props are how data is passed from parent to child components.",
+          qa: [
+            { question: "What are props?", answer: "Props are short for properties and are used to pass data from one component to another." },
+            { question: "How do you define a component?", answer: "You can define a component as a JavaScript function or class." },
+          ],
+        },
+      },
+      {
+        id: 3,
+        title: "State Management with Hooks",
+        description: "Using hooks to manage state in functional components.",
+        image: img3,
+        content: {
+          what: "Hooks allow you to use state and other React features without writing a class.",
+          why: "They simplify component logic and allow for cleaner code.",
+          qa: [
+            { question: "What is useState?", answer: "useState is a hook that lets you add state to your functional components." },
+            { question: "What is useEffect?", answer: "useEffect allows you to perform side effects in function components." },
+          ],
+        },
+      },
+      {
+        id: 4,
+        title: "Understanding Redux",
+        description: "A predictable state container for JavaScript apps.",
+        image: img4,
+        content: {
+          what: "Redux is a state management library for JavaScript applications.",
+          why: "It helps manage the application state in a predictable way, making it easier to debug and test.",
+          qa: [
+            { question: "What are actions in Redux?", answer: "Actions are plain JavaScript objects that describe what happened in the application." },
+            { question: "What is a reducer?", answer: "Reducers are functions that determine how the application's state changes in response to actions." },
+          ],
+        },
+      },
+      {
+        id: 5,
+        title: "Handling Events in React",
+        description: "Understanding event handling in React applications.",
+        image:img5,
+        content: {
+          what: "React provides a synthetic event system that normalizes events across browsers.",
+          why: "This allows for consistent behavior when handling events.",
+          qa: [
+            { question: "How do you handle events in React?", answer: "You can handle events by passing a function as a prop to an element." },
+            { question: "What is event bubbling?", answer: "Event bubbling is a concept where the event starts from the target element and bubbles up to its ancestors." },
+          ],
+        },
+      },
+      {
+        id: 6,
+        title: "React Router",
+        description: "Routing in React applications.",
+        image: img6,
+        content: {
+          what: "React Router is a standard library for routing in React.",
+          why: "It allows you to create single-page applications with navigation.",
+          qa: [
+            { question: "What is a Route?", answer: "A Route is a component that renders UI when its path matches the current URL." },
+            { question: "How do you define a Link?", answer: "A Link component is used to navigate to different routes within your application." },
+          ],
+        },
+      },
     ],
   },
   {
     id: 5,
     title: "Node.js Fundamentals",
-    description: "Learn about server-side programming with Node.js.",
-    image: "https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png?w=500&fm=webp",
+    description: "Creating high-quality content about Node.js involves covering its foundational concepts, best practices, tools, and real-world applications. Here’s a comprehensive overview of essential topics and best practices for Node.js:",
+    image: img1,
     topics: [
       {
         id: 1,
@@ -207,7 +276,7 @@ export const courses = [
   {
     id: 6,
     title: "Python for Beginners",
-    description: "Discover the world of Python programming.",
+    description: "Creating high-quality content in Python involves understanding its best practices, features, and how to write clean, efficient, and maintainable code. Here are some best practices and key topics to consider:",
     image: python,
     topics: [
       {
@@ -299,8 +368,8 @@ export const courses = [
   {
     id: 7,
     title: "English Speaking and Typing",
-    description: "Enhance your English speaking and typing skills.",
-    image: enlishspeaking,
+    description: "Creating high-quality content on English speaking and typing involves various aspects such as grammar, vocabulary, pronunciation, typing techniques, and practical exercises. Here’s a comprehensive guide to best practices and resources for improving English speaking and typing skills:",
+    image: img4,
     topics: [
       {
         id: 1,
