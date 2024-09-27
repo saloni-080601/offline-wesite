@@ -1,4 +1,4 @@
-// data.js
+
 import css from "./assets/css.png";
 import javascript from "./assets/javascript_logo.png";
 import react from "./assets/react.png";
@@ -8,7 +8,15 @@ import img2 from "./assets/if_else_5fc3176c7b.jpg";
 import img3 from "./assets/intro_c9cc87a9b3.jpg";
 import img4 from "./assets/lists_101_6996e5acc4.jpg";
 import img5 from "./assets/loops_101_608858b2e8.jpg";
-import english from "./assets/english-speaking-course.jpeg"
+import english from "./assets/english-speaking-course.jpeg";
+import jsIntro from "./assets/jsintro.jpg";
+import jsVarible from "./assets/jsvarible.jpg";
+import jsIElse from "./assets/jsIfelse.jpg";
+import JsDataType from "./assets/datatypes_5c8c5cb922.jpg";
+import jsloop from "./assets/js_loops.jpg";
+import array from "./assets/js_arrays.jpg";
+import jsObject from "./assets/js_objects.jpg";
+import jsfunction from "./assets/js_functions.jpg"
 export const courses = [
     {
         id: 1,
@@ -17,9 +25,9 @@ export const courses = [
         img: python,
         topics: [
             {
-                id:1,
+                id: 1,
                 title: 'Introduction to Python',
-                img:img1,
+                img: img1,
                 content: [
                     {
                         id: 1,
@@ -33,9 +41,9 @@ export const courses = [
                 ]
             },
             {
-                id:2,
+                id: 2,
                 title: 'Variables',
-                img:img2,
+                img: img2,
                 content: [
                     {
                         id: 1,
@@ -48,9 +56,9 @@ export const courses = [
                 ]
             },
             {
-                id:3,
+                id: 3,
                 title: 'Data Type',
-                img:img3,
+                img: img3,
                 content: [
                     {
                         id: 1,
@@ -67,9 +75,9 @@ export const courses = [
                 ]
             },
             {
-                id:4,
+                id: 4,
                 title: 'Data Type',
-                img:img4,
+                img: img4,
                 content: [
                     {
                         id: 1,
@@ -82,9 +90,9 @@ export const courses = [
                 ]
             },
             {
-                id:5,
+                id: 5,
                 title: 'Operators',
-                img:img5,
+                img: img5,
                 content: [
                     {
                         id: 1,
@@ -97,9 +105,9 @@ export const courses = [
                 ]
             },
             {
-                id:6,
+                id: 6,
                 title: 'IF ELSE',
-                img:img1,
+                img: img1,
                 content: [
                     {
                         id: 1,
@@ -112,9 +120,9 @@ export const courses = [
                 ]
             },
             {
-                id:7,
+                id: 7,
                 title: 'Loop',
-                img:img5,
+                img: img5,
                 content: [
                     {
                         id: 1,
@@ -127,9 +135,9 @@ export const courses = [
                 ]
             },
             {
-                id:8,
+                id: 8,
                 title: 'List useing Python',
-                img:img1,
+                img: img1,
                 content: [
                     {
                         id: 1,
@@ -142,9 +150,9 @@ export const courses = [
                 ]
             },
             {
-                id:9,
+                id: 9,
                 title: 'Introduction to Dictionary ',
-                img:img2,
+                img: img2,
                 content: [
                     {
                         id: 1,
@@ -157,8 +165,8 @@ export const courses = [
                 ]
             },
             {
-                id:10,
-                img:img4,
+                id: 10,
+                img: img4,
                 title: 'Funtions',
                 content: [
                     {
@@ -177,12 +185,12 @@ export const courses = [
         id: 2,
         name: 'CSS',
         description: 'Master CSS for styling websites.',
-        img: css,
+        img: css,  // Assume css is a valid image source
         topics: [
             {
-                id:1,
+                id: 1,
                 title: 'CSS Basics',
-                img:img1,
+                img: img1,  // Assume img1 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -192,12 +200,20 @@ export const courses = [
                         id: 2,
                         description: 'Learn how to use selectors, properties, and values.'
                     },
+                    {
+                        id: 3,
+                        description: 'Explore the importance of CSS specificity and inheritance.'
+                    },
+                    {
+                        id: 4,
+                        description: 'Understand how to apply styles using external, internal, and inline CSS.'
+                    }
                 ]
             },
             {
-                id:2,
-                img:img2,
+                id: 2,
                 title: 'Box Model',
+                img: img2,  // Assume img2 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -207,12 +223,20 @@ export const courses = [
                         id: 2,
                         description: 'Understand content, padding, border, and margin areas.'
                     },
+                    {
+                        id: 3,
+                        description: 'Discover how to adjust the box model with box-sizing property.'
+                    },
+                    {
+                        id: 4,
+                        description: 'Apply margins and padding to create space between elements effectively.'
+                    }
                 ]
             },
             {
-                id:3,
-                img:img5,
+                id: 3,
                 title: 'Flexbox and Grid Layouts',
+                img: img5,  // Assume img5 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -222,6 +246,60 @@ export const courses = [
                         id: 2,
                         description: 'Learn about responsive design with Flexbox and Grid.'
                     },
+                    {
+                        id: 3,
+                        description: 'Explore properties of Flexbox such as justify-content, align-items, and flex-direction.'
+                    },
+                    {
+                        id: 4,
+                        description: 'Master Grid properties such as grid-template-columns, grid-template-rows, and grid-area.'
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: 'Responsive Design',
+                img: img3,  // Assume img3 is a valid image source
+                content: [
+                    {
+                        id: 1,
+                        description: 'Learn how to create responsive layouts using media queries.'
+                    },
+                    {
+                        id: 2,
+                        description: 'Discover the concept of mobile-first design and its importance.'
+                    },
+                    {
+                        id: 3,
+                        description: 'Explore responsive images and how to use the srcset attribute.'
+                    },
+                    {
+                        id: 4,
+                        description: 'Understand how to use rem and em units for responsive typography.'
+                    }
+                ]
+            },
+            {
+                id: 5,
+                title: 'Advanced CSS Techniques',
+                img: img4,  // Assume img4 is a valid image source
+                content: [
+                    {
+                        id: 1,
+                        description: 'Delve into CSS animations and transitions for dynamic effects.'
+                    },
+                    {
+                        id: 2,
+                        description: 'Learn about CSS variables and their usage in maintaining styles.'
+                    },
+                    {
+                        id: 3,
+                        description: 'Understand pseudo-classes and pseudo-elements for styling specific elements.'
+                    },
+                    {
+                        id: 4,
+                        description: 'Explore CSS preprocessors like SASS and LESS for improved styling workflow.'
+                    }
                 ]
             }
         ]
@@ -233,7 +311,8 @@ export const courses = [
         img: javascript,
         topics: [
             {
-                id:1,
+                id: 1,
+                img: jsIntro,
                 title: 'JavaScript Introduction',
                 content: [
                     {
@@ -247,7 +326,8 @@ export const courses = [
                 ]
             },
             {
-                id:2,
+                id: 2,
+                img: jsVarible,
                 title: 'JS Varible ',
                 content: [
                     {
@@ -262,7 +342,8 @@ export const courses = [
             },
 
             {
-                id:3,
+                id: 3,
+                img: JsDataType,
                 title: 'JS Data type',
                 content: [
                     {
@@ -276,7 +357,8 @@ export const courses = [
                 ]
             },
             {
-                id:4,
+                id: 4,
+                img: jsIElse,
                 title: 'JS operation',
                 content: [
                     {
@@ -290,7 +372,8 @@ export const courses = [
                 ]
             },
             {
-                id:5,
+                id: 5,
+                img: jsIElse,
                 title: 'JS If else',
                 content: [
                     {
@@ -304,8 +387,9 @@ export const courses = [
                 ]
             },
             {
-                id:6,
+                id: 6,
                 title: ' JS Loop',
+                img: jsloop,
                 content: [
                     {
                         id: 1,
@@ -318,7 +402,8 @@ export const courses = [
                 ]
             },
             {
-                id:7,
+                id: 7,
+                img: array,
                 title: ' JS Arrays',
                 content: [
                     {
@@ -332,7 +417,8 @@ export const courses = [
                 ]
             },
             {
-                id:8,
+                id: 8,
+                img:jsObject,
                 title: ' JS Objects',
                 content: [
                     {
@@ -346,7 +432,8 @@ export const courses = [
                 ]
             },
             {
-                id:9,
+                id: 9,
+                img:jsfunction,
                 title: ' JS Funtions',
                 content: [
                     {
@@ -368,8 +455,8 @@ export const courses = [
         img: react,
         topics: [
             {
-                id:1,
-                img:img1,
+                id: 1,
+                img: img1,
                 title: 'Introduction to React',
                 content: [
                     {
@@ -383,8 +470,8 @@ export const courses = [
                 ]
             },
             {
-                id:2,
-                img:img2,
+                id: 2,
+                img: img2,
                 title: 'Components and Props',
                 content: [
                     {
@@ -398,8 +485,8 @@ export const courses = [
                 ]
             },
             {
-                id:3,
-                img:img3,
+                id: 3,
+                img: img3,
                 title: 'State Management',
                 content: [
                     {
@@ -421,8 +508,8 @@ export const courses = [
         img: english,
         topics: [
             {
-                id:1,
-                img:img3,
+                id: 1,
+                img: img3,
                 title: 'Spoken English',
                 content: [
                     {
@@ -435,8 +522,8 @@ export const courses = [
                     },
                 ]
             },
-           
-           
+
+
         ]
     }
 
