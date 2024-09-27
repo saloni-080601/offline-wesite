@@ -9,7 +9,6 @@ const TopicContent  = () => {
     const course = courses.find(index => index.id === parseInt(courseId));
     const [selectedContentId, setSelectedContentId] = useState(null);
     const topic = course.topics.find(index => index.id === parseInt(topicId));
-   
 
     const getContentById = (id) => {
         return topic.content.find(item => item.id === id);
@@ -25,7 +24,7 @@ const TopicContent  = () => {
                         <List>
                             {topic.content.map(item => (
                                 <ListItem button key={item.id} onClick={() => setSelectedContentId(item.id)}>
-                                    <ListItemText primary={item.description} />
+                                    <ListItemText primary={item.title} />
                                 </ListItem>
                             ))}
                         </List>

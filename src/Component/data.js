@@ -26,13 +26,64 @@ export const courses = [
                 content: [
                     {
                         id: 1,
-                        description: 's'
-
+                        title: 'Overview of Python',
+                        description: 'Learn what Python is and why it’s one of the most popular programming languages today.'
                     },
                     {
                         id: 2,
-                        description: 'This section covers installation, setup, and your first Python script.'
+                        title: 'Installation and Setup',
+                        description: 'Step-by-step instructions for installing Python on Windows, macOS, and Linux.'
                     },
+                    {
+                        id: 3,
+                        title: 'Your First Python Script',
+                        description: 'Writing and executing your first simple script, including a hello world program.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Understanding Python Syntax',
+                        description: 'Introduction to basic syntax, including indentation, comments, and line breaks.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Data Types and Variables',
+                        description: 'Overview of Python data types (integers, floats, strings, and booleans) and how to create variables.'
+                    },
+                    {
+                        id: 6,
+                        title: 'Operators in Python',
+                        description: 'Exploring arithmetic, comparison, logical, and assignment operators.'
+                    },
+                    {
+                        id: 7,
+                        title: 'Control Structures',
+                        description: 'Introduction to conditional statements (if, else, and elif) and loops (for and while).'
+                    },
+                    {
+                        id: 8,
+                        title: 'Functions',
+                        description: 'Understanding how to define and call functions, including parameters and return values.'
+                    },
+                    {
+                        id: 9,
+                        title: 'Working with Collections',
+                        description: 'Introduction to lists, tuples, sets, and dictionaries and their applications.'
+                    },
+                    {
+                        id: 10,
+                        title: 'Error Handling',
+                        description: 'Basic understanding of exceptions and how to handle errors gracefully in your Python scripts.'
+                    },
+                    {
+                        id: 11,
+                        title: 'Introduction to Libraries',
+                        description: 'Learn how to import and use Python libraries, with examples like `math` and `random`.'
+                    },
+                    {
+                        id: 12,
+                        title: 'Conclusion',
+                        description: 'Summary of what you’ve learned and resources for further study in Python programming.'
+                    }
                 ]
             },
             {
@@ -42,12 +93,20 @@ export const courses = [
                 content: [
                     {
                         id: 1,
-                        description: 'varible data'
+                        title: 'Introduction to Variables',
+                        description: 'In Python, a variable is a named location used to store data in the memory. Variables are fundamental to programming, allowing you to manage and manipulate data. This section covers the basics of what variables are, how they work, and why they are essential in any programming language.'
                     },
                     {
                         id: 2,
-                        description: 'Learn about strings, numbers, lists, and dictionaries in Python.'
+                        title: 'Naming Variables',
+                        description: 'Choosing a meaningful name for your variables is crucial for code readability. In Python, variable names can include letters, numbers, and underscores but must start with a letter or underscore. This section provides guidelines for naming variables effectively, including the importance of adhering to conventions like using lowercase letters and separating words with underscores (e.g., `my_variable`).'
                     },
+                    {
+                        id: 3,
+                        title: 'Data Types of Variables',
+                        description: 'Python supports various data types for variables, enabling you to store different kinds of data. This section introduces the four primary data types in Python:'
+                    },
+
                 ]
             },
             {
@@ -57,16 +116,29 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Control Flow',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
-                        description: 'Understand the use of break and continue statements in loops.'
+                        title: 'Break and Continue',
+                        description: 'Understand the use of break and continue statements in loops to manage execution flow effectively.'
                     },
                     {
                         id: 3,
-                        description: 'Understand the use of break and continue statements in loops.'
+                        title: 'Data Types Overview',
+                        description: 'Learn about different data types in JavaScript, including strings, numbers, booleans, and objects.'
                     },
+                    {
+                        id: 4,
+                        title: 'Type Coercion',
+                        description: 'Discover type coercion and how JavaScript handles implicit and explicit type conversions.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Undefined vs Null',
+                        description: 'Get familiar with the concept of undefined and null in JavaScript and their differences.'
+                    }
                 ]
             },
             {
@@ -413,7 +485,7 @@ export const courses = [
             },
             {
                 id: 8,
-                img:jsObject,
+                img: jsObject,
                 title: ' JS Objects',
                 content: [
                     {
@@ -428,7 +500,7 @@ export const courses = [
             },
             {
                 id: 9,
-                img:jsfunction,
+                img: jsfunction,
                 title: ' JS Funtions',
                 content: [
                     {
@@ -456,12 +528,24 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Getting Started with React',
                         description: 'Understand the core concepts of React and how to create your first React application.'
                     },
                     {
                         id: 2,
-                        description: 'Learn about components, props, and state management.'
+                        title: 'Components, Props, and State Management',
+                        description: 'Learn about components, props, and state management in React to build dynamic applications.'
                     },
+                    {
+                        id: 3,
+                        title: 'Handling Events in React',
+                        description: 'Discover how to handle events in React and create interactive applications.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Working with Forms',
+                        description: 'Learn how to manage forms and handle user input in React applications.'
+                    }
                 ]
             },
             {
@@ -471,12 +555,29 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Building Reusable Components',
                         description: 'Learn how to build reusable components and pass data through props.'
                     },
                     {
                         id: 2,
+                        title: 'Component Hierarchy',
                         description: 'Understand the importance of component hierarchy and reusability.'
                     },
+                    {
+                        id: 3,
+                        title: 'Props vs State',
+                        description: 'Discover the differences between props and state in React components.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Passing Data with Props',
+                        description: 'Learn how to effectively pass data between components using props.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Default Props and Prop Types',
+                        description: 'Explore how to set default props and validate props with PropTypes.'
+                    }
                 ]
             },
             {
@@ -486,12 +587,34 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Introduction to State Management',
                         description: 'Explore different ways to manage state in React applications.'
                     },
                     {
                         id: 2,
-                        description: 'Learn about useState, useReducer, and context API for state management.'
+                        title: 'Using useState Hook',
+                        description: 'Learn how to use the useState hook to manage state in functional components.'
                     },
+                    {
+                        id: 3,
+                        title: 'Understanding useReducer Hook',
+                        description: 'Discover how to manage complex state using the useReducer hook.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Context API for Global State',
+                        description: 'Learn how to use the Context API to manage global state across your application.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Handling State with Redux',
+                        description: 'Understand the principles of Redux for managing state in larger applications.'
+                    },
+                    {
+                        id: 6,
+                        title: 'Best Practices for State Management',
+                        description: 'Explore best practices for state management to keep your application organized and efficient.'
+                    }
                 ]
             }
         ]
@@ -505,21 +628,45 @@ export const courses = [
             {
                 id: 1,
                 img: jsfunction,
-                title: 'Spoken English',
+                title: 'Introduction to Spoken English',
                 content: [
                     {
                         id: 1,
-                        description: 'Understand the core concepts of React and how to create your first React application.'
+                        title: 'Basics of English Communication',
+                        description: 'Learn the foundational aspects of spoken English communication.'
                     },
                     {
                         id: 2,
-                        description: 'Learn about components, props, and state management.'
+                        title: 'Vocabulary Building',
+                        description: 'Expand your English vocabulary through practical exercises and examples.'
                     },
+                    {
+                        id: 3,
+                        title: 'Pronunciation and Accent',
+                        description: 'Work on your pronunciation and accent for clearer communication.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Conversational Skills',
+                        description: 'Develop your ability to engage in everyday conversations in English.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Listening and Comprehension',
+                        description: 'Enhance your listening skills through various audio and video materials.'
+                    },
+                    {
+                        id: 6,
+                        title: 'Public Speaking Techniques',
+                        description: 'Learn techniques for effective public speaking and presentations in English.'
+                    },
+                    {
+                        id: 7,
+                        title: 'Overcoming Language Barriers',
+                        description: 'Strategies to overcome language barriers and communicate confidently.'
+                    }
                 ]
-            },
-
-
+            }
         ]
     }
-
 ];
