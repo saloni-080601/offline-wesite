@@ -141,19 +141,61 @@ export const courses = [
                     }
                 ]
             },
+            // {
+            //     id: 4,
+            //     title: 'Data Type',
+            //     img: JsDataType,
+            //     content: [
+            //         {
+            //             id: 1,
+            //             description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
+            //         },
+            //         {
+            //             id: 2,
+            //             description: 'Understand the use of break and continue statements in loops.'
+            //         },
+            //     ]
+            // },
             {
                 id: 4,
-                title: 'Data Type',
+                title: 'Data Types',
                 img: JsDataType,
                 content: [
                     {
                         id: 1,
+                        title: 'Control Flow in JavaScript',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Understanding Loops',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
+                    {
+                        id: 3,
+                        title: 'Primitive Data Types',
+                        description: 'Learn about primitive data types in JavaScript, including strings, numbers, booleans, null, and undefined.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Reference Data Types',
+                        description: 'Understand reference data types such as objects, arrays, and functions in JavaScript.'
+                    },
+                    {
+                        id: 5,
+                        title: 'Type Coercion and Checking',
+                        description: 'Explore type coercion in JavaScript and how to check data types using typeof and instanceof.'
+                    },
+                    {
+                        id: 6,
+                        title: 'Working with Arrays',
+                        description: 'Learn how to create and manipulate arrays, including methods like push, pop, and slice.'
+                    },
+                    {
+                        id: 7,
+                        title: 'Functions and Scope',
+                        description: 'Understand how functions work in JavaScript, including scope and closures.'
+                    }
                 ]
             },
             {
@@ -163,10 +205,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Control Flow with If Statements',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Using Break and Continue Statements',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -178,10 +222,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Controlling Flow with If Statements',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Understanding Break and Continue',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -193,10 +239,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Controlling Program Flow',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Break and Continue in Loops',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -208,10 +256,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Control Flow with If Statements',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Break and Continue Statements',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -223,10 +273,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Controlling Program Flow',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Break and Continue Statements in Loops',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -238,10 +290,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Control Flow with If Statements',
                         description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
                     },
                     {
                         id: 2,
+                        title: 'Using Break and Continue in Loops',
                         description: 'Understand the use of break and continue statements in loops.'
                     },
                 ]
@@ -261,18 +315,22 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Fundamentals of CSS',
                         description: 'Discover the fundamentals of CSS and how to style your web pages.'
                     },
                     {
                         id: 2,
+                        title: 'Selectors, Properties, and Values',
                         description: 'Learn how to use selectors, properties, and values.'
                     },
                     {
                         id: 3,
+                        title: 'CSS Specificity and Inheritance',
                         description: 'Explore the importance of CSS specificity and inheritance.'
                     },
                     {
                         id: 4,
+                        title: 'Applying Styles with CSS',
                         description: 'Understand how to apply styles using external, internal, and inline CSS.'
                     }
                 ]
@@ -284,18 +342,22 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Understanding the CSS Box Model',
                         description: 'Learn about the CSS box model and how padding, margins, and borders affect layout.'
                     },
                     {
                         id: 2,
+                        title: 'Content, Padding, Border, and Margin Areas',
                         description: 'Understand content, padding, border, and margin areas.'
                     },
                     {
                         id: 3,
-                        description: 'Discover how to adjust the box model with box-sizing property.'
+                        title: 'Adjusting the Box Model',
+                        description: 'Discover how to adjust the box model with the box-sizing property.'
                     },
                     {
                         id: 4,
+                        title: 'Effective Use of Margins and Padding',
                         description: 'Apply margins and padding to create space between elements effectively.'
                     }
                 ]

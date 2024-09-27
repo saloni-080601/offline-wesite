@@ -16,11 +16,11 @@ const TopicContent  = () => {
 
     const selectedContent = selectedContentId ? getContentById(selectedContentId) : null;
     return (
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{mt:7}}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={3}>
                     <Card >
-                        <Typography variant="h5">Content</Typography>
+                        <Typography variant="h5" sx={{fontSize:"bold"}}>Topic Content</Typography>
                         <List>
                             {topic.content.map(item => (
                                 <ListItem button key={item.id} onClick={() => setSelectedContentId(item.id)}>
@@ -30,7 +30,7 @@ const TopicContent  = () => {
                         </List>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={9}>
+                <Grid item xs={12} md={9} sx={{p:4}}>
                     {selectedContent ? (
                         <div>
                             <Typography variant="h5">{selectedContent.description}</Typography>
