@@ -323,7 +323,7 @@ export const courses = [
             {
                 id: 2,
                 title: 'Box Model',
-                img: jsIElse,  // Assume img2 is a valid image source
+                img: jsIElse, 
                 content: [
                     {
                         id: 1,
@@ -350,7 +350,7 @@ export const courses = [
             {
                 id: 3,
                 title: 'Flexbox and Grid Layouts',
-                img: JsDataType,  // Assume img5 is a valid image source
+                img: JsDataType, 
                 content: [
                     {
                         id: 1,
