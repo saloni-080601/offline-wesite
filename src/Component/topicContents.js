@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { courses } from './data';
 import { Card, Grid, Typography, List, ListItem, ListItemText, Button, Container } from '@mui/material';
 
-const TopicContent  = () => {
+const TopicContent = () => {
 
     const { courseId, topicId } = useParams();
     const course = courses.find(index => index.id === parseInt(courseId));
@@ -16,11 +16,11 @@ const TopicContent  = () => {
 
     const selectedContent = selectedContentId ? getContentById(selectedContentId) : null;
     return (
-        <Container maxWidth="xl" sx={{mt:7}}>
+        <Container maxWidth="xl" sx={{ mt: 7 }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={3}>
                     <Card>
-                        <Typography variant="h5" sx={{fontSize:"bold"}}>Topic Content</Typography>
+                        <Typography variant="h5" sx={{ fontSize: "bold" ,p:2,fontSize:"35px"}}>Topic Content</Typography>
                         <List>
                             {topic.content.map(item => (
                                 <ListItem button key={item.id} onClick={() => setSelectedContentId(item.id)}>
@@ -30,11 +30,11 @@ const TopicContent  = () => {
                         </List>
                     </Card>
                 </Grid>
-                <Grid item xs={12} md={9} sx={{p:4}}>
+                <Grid item xs={12} md={9} sx={{ p: 4 }}>
                     {selectedContent ? (
-                        <div>
+                        <>
                             <Typography variant="h5">{selectedContent.description}</Typography>
-                        </div>
+                        </>
                     ) : (
                         <Typography variant="body1">Select a content item to view its description.</Typography>
                     )}

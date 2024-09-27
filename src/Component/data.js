@@ -291,7 +291,7 @@ export const courses = [
         id: 2,
         name: 'CSS',
         description: 'Master CSS and unlock the full potential of web design! This comprehensive course will take you from the basics to advanced styling techniques, empowering you to create visually stunning and responsive websites. Learn essential concepts such as layout design, animations, and best practices for maintaining clean, efficient code. By the end of this course, you’ll have the skills to transform your ideas into beautiful web experiences that captivate users',
-        img: css,  // Assume css is a valid image source
+        img: css,  
         topics: [
             {
                 id: 1,
@@ -377,7 +377,7 @@ export const courses = [
             {
                 id: 4,
                 title: 'Responsive Design',
-                img: jsloop,  // Assume img3 is a valid image source
+                img: jsloop, 
                 content: [
                     {
                         id: 1,
@@ -404,7 +404,7 @@ export const courses = [
             {
                 id: 5,
                 title: 'Advanced CSS Techniques',
-                img: jsVarible,  // Assume img4 is a valid image source
+                img: jsVarible,  
                 content: [
                     {
                         id: 1,
