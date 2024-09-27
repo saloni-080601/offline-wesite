@@ -3,11 +3,6 @@ import css from "./assets/css.png";
 import javascript from "./assets/javascript_logo.png";
 import react from "./assets/react.png";
 import python from "./assets/python-alt.png";
-import img1 from "./assets/datatypes_5c8c5cb922.jpg";
-import img2 from "./assets/if_else_5fc3176c7b.jpg";
-import img3 from "./assets/intro_c9cc87a9b3.jpg";
-import img4 from "./assets/lists_101_6996e5acc4.jpg";
-import img5 from "./assets/loops_101_608858b2e8.jpg";
 import english from "./assets/english-speaking-course.jpeg";
 import jsIntro from "./assets/jsintro.jpg";
 import jsVarible from "./assets/jsvarible.jpg";
@@ -27,7 +22,7 @@ export const courses = [
             {
                 id: 1,
                 title: 'Introduction to Python',
-                img: img1,
+                img: jsIntro,
                 content: [
                     {
                         id: 1,
@@ -43,7 +38,7 @@ export const courses = [
             {
                 id: 2,
                 title: 'Variables',
-                img: img2,
+                img: jsVarible,
                 content: [
                     {
                         id: 1,
@@ -58,7 +53,7 @@ export const courses = [
             {
                 id: 3,
                 title: 'Data Type',
-                img: img3,
+                img: JsDataType,
                 content: [
                     {
                         id: 1,
@@ -77,7 +72,7 @@ export const courses = [
             {
                 id: 4,
                 title: 'Data Type',
-                img: img4,
+                img: JsDataType,
                 content: [
                     {
                         id: 1,
@@ -92,7 +87,7 @@ export const courses = [
             {
                 id: 5,
                 title: 'Operators',
-                img: img5,
+                img: jsIntro,
                 content: [
                     {
                         id: 1,
@@ -107,7 +102,7 @@ export const courses = [
             {
                 id: 6,
                 title: 'IF ELSE',
-                img: img1,
+                img: jsIElse,
                 content: [
                     {
                         id: 1,
@@ -122,7 +117,7 @@ export const courses = [
             {
                 id: 7,
                 title: 'Loop',
-                img: img5,
+                img: jsloop,
                 content: [
                     {
                         id: 1,
@@ -137,7 +132,7 @@ export const courses = [
             {
                 id: 8,
                 title: 'List useing Python',
-                img: img1,
+                img: array,
                 content: [
                     {
                         id: 1,
@@ -152,7 +147,7 @@ export const courses = [
             {
                 id: 9,
                 title: 'Introduction to Dictionary ',
-                img: img2,
+                img: jsObject,
                 content: [
                     {
                         id: 1,
@@ -166,7 +161,7 @@ export const courses = [
             },
             {
                 id: 10,
-                img: img4,
+                img: jsfunction,
                 title: 'Funtions',
                 content: [
                     {
@@ -190,7 +185,7 @@ export const courses = [
             {
                 id: 1,
                 title: 'CSS Basics',
-                img: img1,  // Assume img1 is a valid image source
+                img: jsVarible,  // Assume img1 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -213,7 +208,7 @@ export const courses = [
             {
                 id: 2,
                 title: 'Box Model',
-                img: img2,  // Assume img2 is a valid image source
+                img: jsIElse,  // Assume img2 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -236,7 +231,7 @@ export const courses = [
             {
                 id: 3,
                 title: 'Flexbox and Grid Layouts',
-                img: img5,  // Assume img5 is a valid image source
+                img: JsDataType,  // Assume img5 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -259,7 +254,7 @@ export const courses = [
             {
                 id: 4,
                 title: 'Responsive Design',
-                img: img3,  // Assume img3 is a valid image source
+                img: jsloop,  // Assume img3 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -282,7 +277,7 @@ export const courses = [
             {
                 id: 5,
                 title: 'Advanced CSS Techniques',
-                img: img4,  // Assume img4 is a valid image source
+                img: jsVarible,  // Assume img4 is a valid image source
                 content: [
                     {
                         id: 1,
@@ -456,7 +451,7 @@ export const courses = [
         topics: [
             {
                 id: 1,
-                img: img1,
+                img: JsDataType,
                 title: 'Introduction to React',
                 content: [
                     {
@@ -471,7 +466,7 @@ export const courses = [
             },
             {
                 id: 2,
-                img: img2,
+                img: jsVarible,
                 title: 'Components and Props',
                 content: [
                     {
@@ -486,7 +481,7 @@ export const courses = [
             },
             {
                 id: 3,
-                img: img3,
+                img: JsDataType,
                 title: 'State Management',
                 content: [
                     {
@@ -509,7 +504,7 @@ export const courses = [
         topics: [
             {
                 id: 1,
-                img: img3,
+                img: jsfunction,
                 title: 'Spoken English',
                 content: [
                     {
