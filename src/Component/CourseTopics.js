@@ -4,19 +4,19 @@ import { courses } from './data';
 import { Container, Typography, Grid, Card, CardContent,CardMedia } from '@mui/material';
 
 const Topics = () => {
+
     const { courseId } = useParams();
     const selectedCourse = courses.find(course => course.id === parseInt(courseId));
     if (!selectedCourse) {
         return <Typography variant="h6">Course not found</Typography>;
     }
-
     return (
         <Container>
-            <Typography variant="h3" gutterBottom>
+            <Typography variant="h3" gutterBottom sx={{mt:7}}>
                 {selectedCourse.name} Topics
             </Typography>
 
-            <Grid container spacing={4}>
+            <Grid container spacing={4} sx={{mt:3}}>
                 {selectedCourse.topics.map((topic, index) => (
                     <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
                         <Link to={`/courses/${courseId}/topic/${index + 1}`} style={{ textDecoration: 'none', color: 'inherit' }}>

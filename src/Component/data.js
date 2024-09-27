@@ -141,21 +141,6 @@ export const courses = [
                     }
                 ]
             },
-            // {
-            //     id: 4,
-            //     title: 'Data Type',
-            //     img: JsDataType,
-            //     content: [
-            //         {
-            //             id: 1,
-            //             description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
-            //         },
-            //         {
-            //             id: 2,
-            //             description: 'Understand the use of break and continue statements in loops.'
-            //         },
-            //     ]
-            // },
             {
                 id: 4,
                 title: 'Data Types',
@@ -369,18 +354,22 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Understanding Flexbox and CSS Grid',
                         description: 'Understand modern layout techniques using Flexbox and CSS Grid.'
                     },
                     {
                         id: 2,
+                        title: 'Responsive Design with Flexbox and Grid',
                         description: 'Learn about responsive design with Flexbox and Grid.'
                     },
                     {
                         id: 3,
+                        title: 'Flexbox Properties Overview',
                         description: 'Explore properties of Flexbox such as justify-content, align-items, and flex-direction.'
                     },
                     {
                         id: 4,
+                        title: 'Mastering CSS Grid Properties',
                         description: 'Master Grid properties such as grid-template-columns, grid-template-rows, and grid-area.'
                     }
                 ]
@@ -392,18 +381,22 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Creating Responsive Layouts with Media Queries',
                         description: 'Learn how to create responsive layouts using media queries.'
                     },
                     {
                         id: 2,
+                        title: 'Mobile-First Design Concept',
                         description: 'Discover the concept of mobile-first design and its importance.'
                     },
                     {
                         id: 3,
+                        title: 'Using Responsive Images',
                         description: 'Explore responsive images and how to use the srcset attribute.'
                     },
                     {
                         id: 4,
+                        title: 'Responsive Typography with Rem and Em Units',
                         description: 'Understand how to use rem and em units for responsive typography.'
                     }
                 ]
@@ -415,18 +408,22 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'CSS Animations and Transitions',
                         description: 'Delve into CSS animations and transitions for dynamic effects.'
                     },
                     {
                         id: 2,
+                        title: 'Using CSS Variables',
                         description: 'Learn about CSS variables and their usage in maintaining styles.'
                     },
                     {
                         id: 3,
+                        title: 'Pseudo-Classes and Pseudo-Elements',
                         description: 'Understand pseudo-classes and pseudo-elements for styling specific elements.'
                     },
                     {
                         id: 4,
+                        title: 'CSS Preprocessors: SASS and LESS',
                         description: 'Explore CSS preprocessors like SASS and LESS for improved styling workflow.'
                     }
                 ]
@@ -446,10 +443,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Introduction to JavaScript',
                         description: 'Dive into JavaScript, covering syntax, variables, and basic functions.'
                     },
                     {
                         id: 2,
+                        title: 'Understanding the DOM',
                         description: 'Learn about the document object model (DOM) and how to manipulate it with JavaScript.'
                     },
                 ]
@@ -461,10 +460,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Types of Functions in JavaScript',
                         description: 'Learn about different types of functions in JavaScript and the concept of scope.'
                     },
                     {
                         id: 2,
+                        title: 'Global vs. Local Scope',
                         description: 'Understand the difference between global and local scope.'
                     },
                 ]
@@ -477,13 +478,16 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Understanding Asynchronous Programming',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Handling Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
+
             },
             {
                 id: 4,
@@ -492,10 +496,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Asynchronous Programming Concepts',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Managing Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
@@ -507,10 +513,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Understanding Asynchronous Programming',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Handling Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
@@ -522,10 +530,12 @@ export const courses = [
                 content: [
                     {
                         id: 1,
+                        title: 'Asynchronous Programming Concepts',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Handling Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
@@ -533,29 +543,33 @@ export const courses = [
             {
                 id: 7,
                 img: array,
-                title: ' JS Arrays',
+                title: 'JS Arrays',
                 content: [
                     {
                         id: 1,
+                        title: 'Asynchronous Programming Concepts',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Handling Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
             },
             {
                 id: 8,
-                img: jsObject,
-                title: ' JS Objects',
+                img: jsObject, // Replace with your actual image variable
+                title: 'JS Objects',
                 content: [
                     {
                         id: 1,
+                        title: 'Understanding Asynchronous Programming',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Managing Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]
@@ -563,14 +577,16 @@ export const courses = [
             {
                 id: 9,
                 img: jsfunction,
-                title: ' JS Funtions',
+                title: 'JS Functions',
                 content: [
                     {
                         id: 1,
+                        title: 'Asynchronous Programming Concepts',
                         description: 'Explore asynchronous programming in JavaScript, including callbacks, promises, and async/await.'
                     },
                     {
                         id: 2,
+                        title: 'Handling Asynchronous Operations',
                         description: 'Learn how to handle asynchronous operations in your code.'
                     },
                 ]

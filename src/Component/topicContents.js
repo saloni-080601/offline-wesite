@@ -19,7 +19,7 @@ const TopicContent  = () => {
         <Container maxWidth="xl" sx={{mt:7}}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={3}>
-                    <Card >
+                    <Card>
                         <Typography variant="h5" sx={{fontSize:"bold"}}>Topic Content</Typography>
                         <List>
                             {topic.content.map(item => (

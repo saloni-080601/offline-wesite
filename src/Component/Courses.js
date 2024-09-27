@@ -5,11 +5,11 @@ import { Container, Card, CardContent, Typography, Grid,CardMedia } from "@mui/m
 
 const Courses = () => {
     return (
-        <Container>
-            <Typography variant="h1" gutterBottom>
+        <Container maxWidth="lg" sx={{mt:7}}>
+            <Typography variant="h3" gutterBottom>
                 Courses
             </Typography>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{mt:2}}>
                 {courses.map(course => (
                     <Grid item xs={12} sm={6} md={3} key={course.id}>
                         <Card sx={{ width: "100%", height: "100%" }}>
