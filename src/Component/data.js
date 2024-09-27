@@ -11,7 +11,9 @@ import JsDataType from "./assets/datatypes_5c8c5cb922.jpg";
 import jsloop from "./assets/js_loops.jpg";
 import array from "./assets/js_arrays.jpg";
 import jsObject from "./assets/js_objects.jpg";
-import jsfunction from "./assets/js_functions.jpg"
+import jsfunction from "./assets/js_functions.jpg";
+import Typing from "./assets/typing.jpg";
+
 export const courses = [
     {
         id: 1,
@@ -289,9 +291,125 @@ export const courses = [
     },
     {
         id: 2,
+        name: 'Typing',
+        description: "Explore and learn the essential material and tools to startsupporting your students learning on Meraki",
+        img: Typing,
+        topics: [
+            {
+                id: 1,
+                title: 'Home Row,keysf and j',
+                img: Typing,
+                content: [
+                    {
+                        id: 1,
+                        title: 'Fundamentals of CSS',
+                        description: 'Discover the fundamentals of CSS and how to style your web pages.'
+                    },
+                    {
+                        id: 2,
+                        title: 'Selectors, Properties, and Values',
+                        description: 'Learn how to use selectors, properties, and values.'
+                    },
+                    {
+                        id: 3,
+                        title: 'CSS Specificity and Inheritance',
+                        description: 'Explore the importance of CSS specificity and inheritance.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Applying Styles with CSS',
+                        description: 'Understand how to apply styles using external, internal, and inline CSS.'
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: 'Top Row,keyse and i',
+                img: Typing,
+                content: [
+                    {
+                        id: 1,
+                        title: 'Fundamentals of CSS',
+                        description: 'Discover the fundamentals of CSS and how to style your web pages.'
+                    },
+                    {
+                        id: 2,
+                        title: 'Selectors, Properties, and Values',
+                        description: 'Learn how to use selectors, properties, and values.'
+                    },
+                    {
+                        id: 3,
+                        title: 'CSS Specificity and Inheritance',
+                        description: 'Explore the importance of CSS specificity and inheritance.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Applying Styles with CSS',
+                        description: 'Understand how to apply styles using external, internal, and inline CSS.'
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: 'Bottom Row,keysv, n and b',
+                img: Typing,
+                content: [
+                    {
+                        id: 1,
+                        title: 'Fundamentals of CSS',
+                        description: 'Discover the fundamentals of CSS and how to style your web pages.'
+                    },
+                    {
+                        id: 2,
+                        title: 'Selectors, Properties, and Values',
+                        description: 'Learn how to use selectors, properties, and values.'
+                    },
+                    {
+                        id: 3,
+                        title: 'CSS Specificity and Inheritance',
+                        description: 'Explore the importance of CSS specificity and inheritance.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Applying Styles with CSS',
+                        description: 'Understand how to apply styles using external, internal, and inline CSS.'
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: 'Typeing',
+                img: Typing,
+                content: [
+                    {
+                        id: 1,
+                        title: 'Fundamentals of CSS',
+                        description: 'Discover the fundamentals of CSS and how to style your web pages.'
+                    },
+                    {
+                        id: 2,
+                        title: 'Selectors, Properties, and Values',
+                        description: 'Learn how to use selectors, properties, and values.'
+                    },
+                    {
+                        id: 3,
+                        title: 'CSS Specificity and Inheritance',
+                        description: 'Explore the importance of CSS specificity and inheritance.'
+                    },
+                    {
+                        id: 4,
+                        title: 'Applying Styles with CSS',
+                        description: 'Understand how to apply styles using external, internal, and inline CSS.'
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        id: 2,
         name: 'CSS',
         description: 'Master CSS and unlock the full potential of web design! This comprehensive course will take you from the basics to advanced styling techniques, empowering you to create visually stunning and responsive websites. Learn essential concepts such as layout design, animations, and best practices for maintaining clean, efficient code. By the end of this course, you’ll have the skills to transform your ideas into beautiful web experiences that captivate users',
-        img: css,  
+        img: css,
         topics: [
             {
                 id: 1,
@@ -323,7 +441,7 @@ export const courses = [
             {
                 id: 2,
                 title: 'Box Model',
-                img: jsIElse, 
+                img: jsIElse,
                 content: [
                     {
                         id: 1,
@@ -350,7 +468,7 @@ export const courses = [
             {
                 id: 3,
                 title: 'Flexbox and Grid Layouts',
-                img: JsDataType, 
+                img: JsDataType,
                 content: [
                     {
                         id: 1,
@@ -377,7 +495,7 @@ export const courses = [
             {
                 id: 4,
                 title: 'Responsive Design',
-                img: jsloop, 
+                img: jsloop,
                 content: [
                     {
                         id: 1,
@@ -404,7 +522,7 @@ export const courses = [
             {
                 id: 5,
                 title: 'Advanced CSS Techniques',
-                img: jsVarible,  
+                img: jsVarible,
                 content: [
                     {
                         id: 1,

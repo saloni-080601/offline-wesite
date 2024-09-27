@@ -7,9 +7,7 @@ const Topics = () => {
 
     const { courseId } = useParams();
     const selectedCourse = courses.find(course => course.id === parseInt(courseId));
-    if (!selectedCourse) {
-        return <Typography variant="h6">Course not found</Typography>;
-    }
+   
     return (
         <Container>
             <Typography variant="h3" gutterBottom sx={{ mt: 7 }}>

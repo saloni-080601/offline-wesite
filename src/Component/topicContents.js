@@ -13,7 +13,6 @@ const TopicContent = () => {
     const getContentById = (id) => {
         return topic.content.find(item => item.id === id);
     };
-
     const selectedContent = selectedContentId ? getContentById(selectedContentId) : null;
     return (
         <Container maxWidth="xl" sx={{ mt: 7 }}>
