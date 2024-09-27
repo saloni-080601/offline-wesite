@@ -16,7 +16,7 @@ export const courses = [
     {
         id: 1,
         name: 'Python',
-        description: 'Learn the basics and become comfortable in one of the most popular programming languages Python.',
+        description: 'Dive into the fundamentals of Python, one of the most widely used programming languages today. This course is designed to help you build a strong foundation, making you comfortable with essential concepts and practical applications. Whether you’re a complete beginner or looking to refresh your skills, you  gain the confidence to tackle real-world projects and unlock new career opportunities in tech',
         img: python,
         topics: [
             {
@@ -290,7 +290,7 @@ export const courses = [
     {
         id: 2,
         name: 'CSS',
-        description: 'Master CSS for styling websites.',
+        description: 'Master CSS and unlock the full potential of web design! This comprehensive course will take you from the basics to advanced styling techniques, empowering you to create visually stunning and responsive websites. Learn essential concepts such as layout design, animations, and best practices for maintaining clean, efficient code. By the end of this course, you’ll have the skills to transform your ideas into beautiful web experiences that captivate users',
         img: css,  // Assume css is a valid image source
         topics: [
             {
@@ -433,7 +433,7 @@ export const courses = [
     {
         id: 3,
         name: 'JavaScript',
-        description: 'Understand the fundamentals of JavaScript.',
+        description: 'Become a JavaScript expert and elevate your web development skills! This comprehensive course is designed to take you through the essentials of JavaScript, from understanding basic syntax to implementing complex functionalities. You’ll learn how to manipulate the Document Object Model (DOM), handle events, and work with libraries and frameworks to create interactive web applications. With hands-on projects and real-world',
         img: javascript,
         topics: [
             {
@@ -596,7 +596,7 @@ export const courses = [
     {
         id: 4,
         name: 'React.js',
-        description: 'Build dynamic user interfaces with React.',
+        description: 'Dive into the world of React.js and revolutionize your web development skills! This comprehensive course covers everything from the core concepts of React to advanced techniques that will set you apart as a developer. You’ll learn how to create reusable components, manage application state, and utilize React Router for seamless navigation. With a focus on practical applications, you’ll build real-world projects that enhance your understanding of how to create scalable, high-performance web applications. Join a vibrant community of developers and gain insights into best practices',
         img: react,
         topics: [
             {
