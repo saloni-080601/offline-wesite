@@ -8,16 +8,8 @@ const TopicContent  = () => {
     const { courseId, topicId } = useParams();
     const course = courses.find(index => index.id === parseInt(courseId));
     const [selectedContentId, setSelectedContentId] = useState(null);
-
-    if (!course) {
-        return (
-            <Typography variant="h6">Course not found</Typography>
-        );
-    }
     const topic = course.topics.find(index => index.id === parseInt(topicId));
-    if (!topic) {
-        return <Typography variant="h6">Topic not found</Typography>;
-    }
+   
 
     const getContentById = (id) => {
         return topic.content.find(item => item.id === id);
