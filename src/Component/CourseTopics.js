@@ -1,46 +1,44 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Typography,Card, CardContent, CardMedia ,Container} from '@mui/material';
-import { courseTopics } from "./data";
+import { courses } from './data';
+import { Container, Typography, Grid, Card, CardContent,CardMedia } from '@mui/material';
 
-const CourseTopics = () => {
+const Topics = () => {
     const { courseId } = useParams();
-    const topics = courseTopics[courseId];
+    const selectedCourse = courses.find(course => course.id === parseInt(courseId));
+    if (!selectedCourse) {
+        return <Typography variant="h6">Course not found</Typography>;
+    }
 
     return (
         <Container>
-            <Typography variant="h4" gutterBottom>
-                Topics for Course {courseId}
+            <Typography variant="h3" gutterBottom>
+                {selectedCourse.name} Topics
             </Typography>
-            <Grid container spacing={2}>
-                {topics ? (
-                    topics.map((topic, index) => (
-                        <Grid item key={index} xs={12} sm={6} md={4}>
+
+            <Grid container spacing={4}>
+                {selectedCourse.topics.map((topic, index) => (
+                    <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                        <Link to={`/courses/${courseId}/topic/${index + 1}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card>
+                                <CardMedia
+                                    component="img"
+                                    height="200"
+                                    image={topic.img}
+                                    alt="Random Image"
+                                />
                                 <CardContent>
-                                    <CardMedia
-                                        component="img"
-                                        height="300"
-                                        width="100%"
-                                        sx={{
-                                            objectFit: 'cover',
-                                            borderRadius: 2,
-                                        }}
-                                        image={topic.img}
-                                    />
-                                    <Typography variant="h6" component={Link} to={`/courses/${courseId}/topics/${index + 1}`} color="primary" style={{ textDecoration: 'none' }}>
+                                    <Typography variant="h6">
                                         {topic.title}
                                     </Typography>
                                 </CardContent>
                             </Card>
-                        </Grid>
-                    ))
-                ) : (
-                    <Typography>No topics available</Typography>
-                )}
+                        </Link>
+                    </Grid>
+                ))}
             </Grid>
         </Container>
     );
 };
 
-export default CourseTopics;
+export default Topics;

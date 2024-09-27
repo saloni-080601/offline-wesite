@@ -1,48 +1,34 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import {CardMedia,Typography, Card, CardContent, Grid, CardActions, Button, Container } from '@mui/material';
+import React from "react";
+import { Link } from "react-router-dom";
 import { courses } from "./data";
+import { Container, Card, CardContent, Typography, Grid,CardMedia } from "@mui/material";
 
 const Courses = () => {
     return (
-        <>
-            <Container maxWidth="lg">
-                <Typography variant="h4" gutterBottom>
-                    Courses
-                </Typography>
-                <Grid container spacing={2}>
-                    {courses.map(course => (
-                        <Grid item key={course.id} xs={12} sm={6} md={4}>
-                            <Card>
+        <Container>
+            <Typography variant="h1" gutterBottom>
+                Courses
+            </Typography>
+            <Grid container spacing={2}>
+                {courses.map(course => (
+                    <Grid item xs={12} sm={6} md={3} key={course.id}>
+                        <Card sx={{ width: "100%", height: "100%" }}>
+                            <Link to={`/courses/${course.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <CardMedia
+                                    component="img"
+                                    height="200"
+                                    image={course.img}
+                                    alt="Random Image"
+                                />
                                 <CardContent>
-                                    <CardMedia
-                                        component="img"
-                                        height="200"
-                                        width="100%"
-                                        sx={{
-                                            objectFit: 'cover',
-                                            borderRadius: 2,
-                                        }}
-                                        image={course.img}
-                                    />
-                                    <Typography variant="h5" component="div">
-                                        {course.name}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        {course.description}
-                                    </Typography>
+                                    <Typography variant="h6">{course.name}</Typography>
                                 </CardContent>
-                                <CardActions>
-                                    <Button size="small" component={Link} to={`/courses/${course.id}`}>
-                                        Learn More
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Container>
-        </>
+                            </Link>
+                        </Card>
+                    </Grid>
+                ))}
+            </Grid>
+        </Container>
     );
 };
 
