@@ -9,18 +9,20 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'), // Optional
-      nodeIntegration: true
-    }
+      nodeIntegration: true,
+      contextIsolation: false, // Ensure context isolation is disabled for using Node APIs in React
+    },
   });
 
-  mainWindow.loadURL(
-    process.env.ELECTRON_START_URL || `file://${path.join(__dirname, '../build/index.html')}`
-  );
+  // Load React build index.html
+  mainWindow.loadURL(`file://${path.join(__dirname, '../build/index.html')}`);
 
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
+
+  // Open DevTools for debugging
+  mainWindow.webContents.openDevTools();
 
   // Trigger auto-updater check after window is created
   autoUpdater.checkForUpdatesAndNotify();
@@ -36,7 +38,7 @@ autoUpdater.on('update-available', () => {
   dialog.showMessageBox({
     type: 'info',
     title: 'Update Available',
-    message: 'A new version is available. The update is being downloaded.'
+    message: 'A new version is available. The update is being downloaded.',
   });
 });
 
@@ -45,7 +47,7 @@ autoUpdater.on('update-not-available', () => {
   dialog.showMessageBox({
     type: 'info',
     title: 'No Updates',
-    message: 'No new updates are available.'
+    message: 'No new updates are available.',
   });
 });
 
@@ -63,7 +65,7 @@ autoUpdater.on('update-downloaded', () => {
   dialog.showMessageBox({
     type: 'info',
     title: 'Update Ready',
-    message: 'Updates downloaded. The application will now restart to install the update.'
+    message: 'Updates downloaded. The application will now restart to install the update.',
   }).then(() => {
     autoUpdater.quitAndInstall();
   });
