@@ -1,4 +1,4 @@
-const { app, BrowserWindow, dialog } = require('electron');
+const { app, BrowserWindow, dialog, net } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const path = require('path');
 
@@ -24,8 +24,25 @@ function createWindow() {
   // Open DevTools for debugging
   mainWindow.webContents.openDevTools();
 
-  // Trigger auto-updater check after window is created
-  autoUpdater.checkForUpdatesAndNotify();
+  // Check for updates after window is created, but only if there is an internet connection
+  checkForUpdates();
+}
+
+// Function to check for internet connection
+function checkForUpdates() {
+  const online = net.isOnline(); // Check if internet connection is available
+
+  if (online) {
+    console.log('Internet connection available, checking for updates...');
+    autoUpdater.checkForUpdatesAndNotify();
+  } else {
+    console.log('No internet connection, skipping update check.');
+    dialog.showMessageBox({
+      type: 'info',
+      title: 'Offline Mode',
+      message: 'You are offline. The application cannot check for updates.',
+    });
+  }
 }
 
 // Handle auto-update events
