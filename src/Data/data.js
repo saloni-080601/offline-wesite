@@ -655,8 +655,8 @@ export const courses = [
                                 code: "var.123 = 56\nprint(var.123)\n"
                             },
                             {
-                                id:1,
-                                Question:"Output :-SyntaxError: invalid syntax"
+                                id: 1,
+                                Question: "Output :-SyntaxError: invalid syntax"
 
                             }
 
@@ -665,12 +665,12 @@ export const courses = [
                     {
                         id: 9,
                         title: "variables_Assessment",
-                        description:[
-                           {
-                            id:1,
-                            Question:"Variable Exercise",
-                            text:"Please give the quiz with proper details to understand how much of this course did you understand."
-                           }
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variable Exercise",
+                                text: "Please give the quiz with proper details to understand how much of this course did you understand."
+                            }
 
                         ]
                     },
@@ -724,33 +724,139 @@ export const courses = [
                     {
                         id: 1,
                         title: 'Introduction to Data Types',
-
-                        description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
+                        description: [
+                            {
+                                id: 1,
+                                Question: "What is a Data Type ?",
+                                text: "As we read the English book, every word in it is English, means theinformation is in English. Whatever knowledge we are taking from the book isdata, and the language is itstype.Data typeindicates the type ofinformation.TheData typerepresents a type of value that determines which operation can be performed per data. For example,numeric,non-numericorBoolean (true/false)data are the most commonly used data types.Data Type is a very important concept inProgramming.We can store different type of data type in avariable. LikeNumeric,Characters. Everyprogramminglanguage has data types."
+                            },
+                            {
+                                id: 2,
+                                Question: "Below are some data types inPython",
+                                text: "Numeric type - (Integer,Float, complex) Text type - (String) Boolean type - (True,False) Sequence type - (List, Tuple, Range)"
+                            }
+                        ]
                     },
                     {
                         id: 2,
                         title: 'Types of Data Types',
-                        description: 'Understand the use of break and continue statements in loops.'
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Numeric Type :-",
+                                text: "We store numbers in the numeric type. Like -int, float, complex.",
+                            },
+                            {
+                                id: 2,
+                                Question: "Integer Data Type(int data type):-",
+                                text: "Integer data type has a simple numeric value which is either positive or negative whose length is unlimited"
+                            }
+                        ]
                     },
                     {
                         id: 3,
-                        title: 'Data Type Conversion',
-                        description: 'Understand the use of break and continue statements in loops.'
+                        title: 'Numeric Type',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Numeric Type :-",
+                                text: "We store numbers in the numeric type. Like -int, float, complex."
+                            },
+                            {
+                                id: 2,
+                                Question: "Integer Data Type(int data type):-",
+                                text: "Integer data type has a simple numeric value which is either positive or negative whose length is unlimited."
+                            },
+                            {
+                                id: 3,
+                                Question: "Example :-",
+                            },
+                            {
+                                id: 13,
+                                Question: "Code Example",
+                                code: "a = 14582\nprint(a)\n"
+                            }
+
+                        ]
                     },
                     {
                         id: 4,
-                        title: 'Data Type Question 1',
-                        description: 'Practice question to test your understanding of data types.'
+                        title: 'Data Type Numberric Q',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Example-1",
+                                text: "Create a variable with name number and assign any INTEGER value to it.Print the number. Assign a FLOAT value to the number variable. Print the number. Assign a Complex value to the number variable. Print the number."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "number = 6\nprint(number)\nnumber = 56.67\nprint(number)\nnumber = 5 + 7j\nprint(number)\n Output :-656.67(5+7j)"
+                            },
+                            {
+                                id: 3,
+                                Question: "Example-2",
+                                text: "Take 2 inputs from the user with data type INTEGER. Store the sum of the 2 user inputs in a variable with name SUM. Print SUM."
+                            },
+                            {
+                                id: 4,
+                                Question: "Code Example",
+                                code: "a = int(input(\"enter the first number=\"))\nb = int(input(\"Enter the second number=\"))\nSUM = a + b\nprint(SUM)\n Output :-If user enter a = 5 , b = 5 then output will be 10."
+                            },
+                        ]
                     },
                     {
                         id: 5,
-                        title: 'Data Type Question 2',
-                        description: 'Practice question to test your understanding of data types.'
+                        title: 'Data Types string',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "String Data Type",
+                                text: "A Python string is a sequence of characters or text. It handles text data. Whatever we write inside of single or double quotes is a string in python."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                text: "In this example, we have taken two different variables in which the value is written inside double (\" \") quotes or single (' ') quotes.",
+                                code: "a = \"Hello python\"\nb = \"Hello world\"\nprint(a)\nprint(b)\nOutput: Hello python\nHello world"
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "a = \"hello\"\nprint(type(a))\n# Output: <class 'str'> ( means string, for checking the data type we use type())."
+                            }
+                        ]
                     },
                     {
                         id: 6,
-                        title: 'Data Type Question 3',
-                        description: 'Practice question to test your understanding of data types.'
+                        title: 'Data Type Stype Q',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Note :",
+                                text: "Please read about String Concatenation.",
+                            },
+                            {
+                                id: 2,
+                                Question: "Example-1",
+                                text: "You have to take two inputs from the user whose data type is STRING.Then in variable by name add, store the sum of both the user inputs. Print the variable add."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "a = input(\"enter first value=\")\nb = input(\"enter second value=\")\nadd = a + b\nprint(add)\n# Output: The concatenated result of the two inputs Output :-If user enter a = hii and b = sam , then output should be hiisam."
+                            },
+                            {
+                                id: 4,
+                                Question: "Example-2",
+                                text: "Take one INTEGER type input and one STRING type input from the user.Then in variable by name add, store the sum of both the user inputs.Print the variable add."
+                            },
+                            {
+                                id: 5,
+                                Question: "Code Example",
+                                code: "a = int(input(\"enter first value=\"))\nb = input(\"enter second value=\")\nadd = a + b\nprint(add)\n# Output: This will raise a TypeError because you cannot add an int and a str"
+                            }
+                        ]
                     },
                     {
                         id: 7,
