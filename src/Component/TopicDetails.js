@@ -1,63 +1,54 @@
-import {
-   
-    Link,
-    useParams,
-  } from "react-router-dom";
-  
-  import {
-    Button,
-    Box,
-    Container,
-    Typography
-  } from "@mui/material";
-  
-const TopicDetails = ({ topics }) => {
-    const { courseId, topicId } = useParams();
-    const topic = topics.find((topic) => topic.id === parseInt(topicId));
-  
-    if (!topic) {
-      return (
-        <Container sx={{ mt: 4 }}>
-          <Typography variant="h5" color="error">
-            Topic not found!
-          </Typography>
-        </Container>
-      );
-    }
+import React from 'react';
+import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
+import {classs} from "./style";
+
+import { Button,Card ,Grid ,Typography,CardContent,CardMedia } from '@mui/material';
+const StyledCard = styled(Card)(({ theme }) => ({
+    transition: "transform 0.3s, box-shadow 0.3s",
+    "&:hover": {
+        transform: "scale(1.05)",
+        boxShadow: theme.shadows[10],
+    },
+}));
+
+const TopicsComponent = ({ topics, courseId }) => {
     return (
-      <Container sx={{ mt: 4, bgcolor: '#f9f9f9', borderRadius: '8px', p: 4 }}>
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#333' }}>
-          {topic.title}
-        </Typography>
-        <Typography variant="body1" sx={{ mb: 2, lineHeight: 1.6, color: '#555' }}>
-          {topic.content.what}
-        </Typography>
-        <Typography variant="body1" sx={{ mt: 2, lineHeight: 1.6, color: '#555' }}>
-          {topic.content.why}
-        </Typography>
-        <Typography variant="h6" sx={{ mt: 3, fontWeight: 'bold', color: '#444' }}>
-          Q&A
-        </Typography>
-        {topic.content.qa.map((item, index) => (
-          <Box key={index} sx={{ mb: 2, p: 2, bgcolor: '#fff', borderRadius: '4px', boxShadow: 1 }}>
-            <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold' }}>
-              {item.question}
-            </Typography>
-            <Typography variant="body2" sx={{ color: '#333' }}>
-              {item.answer}
-            </Typography>
-          </Box>
-        ))}
-        <Button
-          variant="outlined"
-          color="primary"
-          component={Link}
-          to={`/course/${courseId}`}
-          sx={{ mt: 2, '&:hover': { backgroundColor: '#3f51b5', color: '#fff' } }}
-        >
-          Back to Course
-        </Button>
-      </Container>
+        <Grid container spacing={4}>
+            {topics.map((topic) => (
+                <Grid item xs={12} sm={6} md={4} key={topic.id}>
+                    <StyledCard
+                      sx={classs.card} 
+                    >
+                        {topic.image && (
+                            <CardMedia
+                                component="img"
+                                height="240"
+                                width="100%"
+                                sx={{ p: 4 }}
+                                image={topic.image}
+                                alt={topic.title}
+                            />
+                        )}
+                        <CardContent>
+                            <Typography variant="h5">{topic.title}</Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                {topic.description}
+                            </Typography>
+                            <Button
+                                variant="outlined"
+                                component={Link}
+                                to={`/course/${courseId}/topic/${topic.id}`} 
+                                sx={{ mt: 2 }}
+                            >
+                                View Topic Details
+                            </Button>
+                        </CardContent>
+                    </StyledCard>
+                </Grid>
+            ))}
+        </Grid>
     );
-  };
-export default TopicDetails  
+};
+
+export default TopicsComponent;
