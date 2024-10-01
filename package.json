@@ -66,6 +66,14 @@
     "electron-builder": "^25.0.0",
     "react-scripts": "5.0.1"
   },
+  "repository": "https://github.com/saloni-080601/offline-wesite",
+  "publish": {
+    "provider": "github",
+    "email": "salonipanwar532@gmail.com",
+    "url": "https://github.com/saloni-080601",
+    "owner": "saloni-080601",
+    "repo": "offline-wesite"
+  },
   "build": {
     "appId": "com.navgurukul.thesama",
     "productName": "sama-learning-app",
