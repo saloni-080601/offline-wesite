@@ -14,7 +14,7 @@ export const courses = [
     {
         id: 1,
         name: 'Python',
-        description: 'Learn the basics and become comfortable in one of the most popular programming languages Python.',
+        description: 'Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Here are some key features and characteristics of Python:',
         img: python,
         topics: [
             {
@@ -92,7 +92,6 @@ export const courses = [
                                 text: "Execute each example onpython shell. If you are not doing this you are making a fool of yourself. By copy-pasting the code, you will not be able to understand it properly. You should write each code by yourself and then run it. Words written in UPPER CASE orbold lettersare very important. Learn them, you will come across them many times. During the course you need to answer some questions at many places. To give answers you can upload the file.",
 
                             }
-
                         ]
                     },
                     {
@@ -510,41 +509,170 @@ export const courses = [
                     {
                         id: 2,
                         title: "variables_variables-question",
-                        description:[
+                        description: [
                             {
-                                id:1,
-                                Question:"Variable Example",
-                                text:"To answer any question you can upload the file.Remember python file extension is .py.Just for your ease we have broken up this question into multiple parts. But you have to do the submission in single file only."
+                                id: 1,
+                                Question: "Variable Example",
+                                text: "To answer any question you can upload the file.Remember python file extension is .py.Just for your ease we have broken up this question into multiple parts. But you have to do the submission in single file only."
+                            },
+                            {
+                                id: 2,
+                                Question: "Example Part 1",
+                                text: "1. Assign an INTEGER value to a variable named as variable_nav.2. Then print the variable_nav."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "variable_nav = 50\nprint(variable_nav)\n"
+                            },
+                            {
+                                id: 4,
+                                Question: "Output :50",
+                                text: "1. Take a new variable named as gurukul and assign any STRING value to it.2. Assign a FLOAT value to variable_nav and set it.3. Now print the value of variable_nav and gurukul."
+                            },
+                            {
+                                id: 5,
+                                Question: "Code Example",
+                                code: "gurukul = \"hii\"\nvariable_nav = 67.78\nprint(gurukul)\nprint(variable_nav)\n"
+                            },
+                            {
+                                id: 6,
+                                Question: "Output :-hii67.78",
                             }
                         ]
                     },
                     {
                         id: 3,
-                        title: "variables_variables-naming-rules"
+                        title: "variables_variables-naming-rules",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Naming rules for a VARIABLE",
+                                text: "In Python for naming variables, some rules are followed. If we do not follow these rules, then theprogramis not going to be correct.",
+                            },
+                            {
+                                id: 2,
+                                Question: "Keep these 3 rules always in your mind:",
+                                text: "The name starts with either some - Letter or an _ (underscore).Only letters, underscore or numbers can be present in the Name (no special characters).It is Case Sensitive (means var, VAR, Var are different variables).Correct Names- variable, var123, var_12, _var, _12Incorrect Names- var@iable, 123var, var.123Different Names- varX, varx, Varx, VarX"
+                            },
+                            {
+                                id: 3,
+                                Question: "Activity :",
+                                text: "In Python shell, try to put values in the Incorrect variable names. See how python gives errors."
+                            }
+                        ]
                     },
                     {
                         id: 4,
-                        title: "variables_variables-naming-conventions"
+                        title: "variables_variables-naming-conventions",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variables naming conventions",
+                                text: "It is very important to give correct name to a Variable.If you don't give names properly, then nobody will be able to read your Code, as they won't be able to understand that for what purpose the variable is used?camelCase,PascalCase,snake_case,UPPER_CASE,kebab-case.are five most popular cases for naming.You can read in detail about thecaseshere.In Python, we usually use :"
+                            },
+
+                        ]
                     },
                     {
                         id: 5,
-                        title: "variables_variables-naming-question1"
+                        title: "variables_variables-naming-question1",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variables naming Example-1",
+                                text: "Assign FLOAT value to a VARIABLE named as var_12.Assign STRING value to a VARIABLE named as_var.Assign INTEGER value to a VARIABLE named as_12.After doing the above 3 steps, print those three variables."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "var_12 = 56.67\n_var = \"hii\"\n_12 = 56\nprint(var_12)\nprint(_var)\nprint(_12)\n"
+                            },
+                            {
+                                id: 3,
+                                Question: "Output :-56.67hii56"
+                            }
+
+                        ]
                     },
                     {
                         id: 6,
-                        title: "variables_variables-naming-question2"
+                        title: "variables_variables-naming-question2",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variables naming Example-1",
+                                text: "Assign FLOAT value to a VARIABLE named as var_12. Assign STRING value to a VARIABLE named as_var.Assign INTEGER value to a VARIABLE named as_12.After doing the above 3 steps, print those three variables."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "var_12 = 56.67\n_var = \"hii\"\n_12 = 56\nprint(var_12)\nprint(_var)\nprint(_12)\n"
+                            },
+                            {
+                                id: 3,
+                                Question: "Output :-56.67hii56"
+                            }
+
+                        ]
                     },
                     {
                         id: 7,
-                        title: "variables_variables-naming-question3"
+                        title: "variables_variables-naming-question3",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variables naming Example-2",
+                            },
+                            {
+                                id: 2,
+                                Question: "Example",
+                                text: "Assign INTEGER value to a VARIABLE named as 123var.If your code runs easily, then upload it. If it does not run then put the reason in the comment and upload the code."
+                            },
+                            {
+                                id: 4,
+                                Question: "Code Example",
+                                code: "123var = 100\nprint(123var)\n"
+                            },
+                            {
+                                id: 5,
+                                Question: "Output: -SyntaxError: invalid syntax"
+                            }
+                        ]
                     },
                     {
                         id: 8,
-                        title: "variables_variables-naming-question4"
+                        title: "variables_variables-naming-question4",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Variables naming Example-3",
+                                text: "Example Assign an INTEGER value to a VARIABLE named as var.123.If your code runs easily, then upload it. If it does not run then put the reason in the comment and then upload the code."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "var.123 = 56\nprint(var.123)\n"
+                            },
+                            {
+                                id:1,
+                                Question:"Output :-SyntaxError: invalid syntax"
+
+                            }
+
+                        ]
                     },
                     {
                         id: 9,
-                        title: "variables_Assessment"
+                        title: "variables_Assessment",
+                        description:[
+                           {
+                            id:1,
+                            Question:"Variable Exercise",
+                            text:"Please give the quiz with proper details to understand how much of this course did you understand."
+                           }
+
+                        ]
                     },
                     {
                         id: 10,

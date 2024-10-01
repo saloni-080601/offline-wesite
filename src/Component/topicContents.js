@@ -6,7 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { classs } from './style';
 
 const TopicContent = () => {
-    
+
     const { courseId, topicId } = useParams();
     const course = courses.find(index => index.id === parseInt(courseId));
     const [selectedContentId, setSelectedContentId] = useState(null);
@@ -108,7 +108,7 @@ const TopicContent = () => {
                                             {descItem.text1}
                                         </Typography>
                                         <img scr={descItem.img}></img>
-
+                                        
                                     </Box>
                                 ))
                             ) : (
