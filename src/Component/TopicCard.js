@@ -1,6 +1,8 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import {classs} from "./style";
+
 import { Button,Card ,Grid ,Typography,CardContent,CardMedia } from '@mui/material';
 const StyledCard = styled(Card)(({ theme }) => ({
     transition: "transform 0.3s, box-shadow 0.3s",
@@ -15,7 +17,9 @@ const TopicsComponent = ({ topics, courseId }) => {
         <Grid container spacing={4}>
             {topics.map((topic) => (
                 <Grid item xs={12} sm={6} md={4} key={topic.id}>
-                    <StyledCard>
+                    <StyledCard
+                      sx={classs.card} 
+                    >
                         {topic.image && (
                             <CardMedia
                                 component="img"
@@ -34,7 +38,7 @@ const TopicsComponent = ({ topics, courseId }) => {
                             <Button
                                 variant="outlined"
                                 component={Link}
-                                to={`/course/${courseId}/topic/${topic.id}`} // Updated link to include course ID
+                                to={`/course/${courseId}/topic/${topic.id}`} 
                                 sx={{ mt: 2 }}
                             >
                                 View Topic Details
