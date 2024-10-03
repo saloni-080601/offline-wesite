@@ -1,3 +1,5 @@
+import { fontSize, height, padding } from "@mui/system";
+
 export const classs = {
     title: {
         fontSize: "30px",
@@ -12,14 +14,15 @@ export const classs = {
         mt: 2
     },
     text: {
-        fontSize: "16px",
+        fontSize: "22px",
         mt: 2,
         lineHeight: 1.6,
         mt: 3
     },
     card: {
         width: "100%",
-        height: "100%",
+        height:"290px",
+        // height: "80%",
         transition: 'transform 0.3s, box-shadow 0.3s', // Add transition for smooth effect
         '&:hover': {
             transform: 'scale(1.05)', // Scale up on hover

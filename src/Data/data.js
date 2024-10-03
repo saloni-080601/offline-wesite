@@ -860,13 +860,124 @@ export const courses = [
                     },
                     {
                         id: 7,
-                        title: 'Data Type Question 4',
-                        description: 'Practice question to test your understanding of data types.'
+                        title: 'Data TYpes Boolean',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Boolean Data Type",
+                                text: "Boolean is a common data type of all programming languages. Boolean returns two values.True False",
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "a = \"\"\nprint(bool(a))\n# Output: False Because empty string is false."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "b = \"megha\"\nprint(bool(b))\n# True Because any string is true except empty."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "print(True)\nprint(type(True))\nprint(False)\nprint(type(False))\n# Output:\n# True\n# <class 'bool'>\n# False\n# <class 'bool'>"
+                            },
+                        ]
                     },
                     {
                         id: 8,
-                        title: 'Data Type Assessment',
-                        description: 'Assessment to test your understanding of data types.'
+                        title: 'Type-Conversion-TYpe-COnversion-Intro',
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Note :",
+                                text: "Remember to run all the code examples and see them. Only by trying them you will be able to learn."
+                            },
+                            {
+                                id: 2,
+                                Question: "What is Type Conversion?",
+                                text: "In the previous sections, we understood that there are different data types in Python. Some of the types we have read about are :1.Integer2.Float3.String Examples :-Read the examples carefully.",
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "# integer\nage = 27\ntotal_apples = 100\n\n# float\nweight = 10.5\narea = 120.56\n\n# string\nday = \"Wednesday\"\nname = \"Mahatma Gandhi\"\na = \"Y\"\n"
+                            },
+                            {
+                                id: 4,
+                                text: "We can convert our data from one type to another data type in python. This will come in very handy in the future because we will often have data in one type and we will have to convert to another type. In Python we can do this with the help of type conversions :-1.Float to String2.Float to Integer3.Integer to String4.Integer to Float5.String to Float6.String to Integer"
+                            },
+                            {
+                                id: 5,
+                                Question: "String to Integer and String to Float",
+                                text: "Now let us see how to convert to INTEGER. Type cast 12 to Python Integer and store 12."
+                            },
+                            {
+                                id: 6,
+                                Question: "Code Example",
+                                code: "var_a = '12'\nvar_b = int(var_a)\nprint(type(var_a))\nprint(type(var_b))\nprint(var_a + var_a)\nprint(var_b + var_b)\n# Output :-type - strtype - int121224"
+                            },
+                            {
+                                id: 7,
+                                Question: "Code Example",
+                                text: "In this example, we attempt to convert a string containing non-numeric characters to an integer, which will raise a ValueError.",
+                                code: "var_a = '12houses'\n\ntry:\n    var_b = int(var_a)\nexcept ValueError:\n    var_b = 'Error: Cannot convert to int'\n\nprint(type(var_a))\nprint(type(var_b))\n# Output:\n# <class 'str'>\n# <class 'str'>\n# Error: Cannot convert to int"
+                            },
+                            {
+                                id: 8,
+                                Question: "Code Example",
+                                code: "var_a = '12houses'\n\ntry:\n    var_b = int(var_a)\nexcept ValueError:\n    var_b = 'Error: Cannot convert to int'\n\nprint(type(var_a))\nprint(type(var_b))\n# Output:\n# <class 'str'>\n# <class 'str'>\n# Error: Cannot convert to int"
+                            },
+                            {
+                                id: 9,
+                                text: "Python tries to convert STRING to INTEGERbut throws an error if it is even a bit confusing. Ex :- Python cannot convert 12.2, and 12houses to integer but can do the same for 12.Python does not know how to extract integers from 12houses."
+                            },
+                            {
+                                id: 10,
+                                Question: "Code Example",
+                                code: "var_a = '12.2'\n\ntry:\n    var_b = int(var_a)\nexcept ValueError:\n    var_b = 'Error: Cannot convert to int'\n\nprint(type(var_a))\nprint(type(var_b))\n# Output:\n# <class 'str'>\n# <class 'str'>\nOutput :-type - floattype - int"
+                            },
+                            {
+                                id: 11,
+                                Question: "Float to Integer and Float to String",
+                                text: "Converts any FLOAT to Python INTEGER by removing its decimal part."
+                            },
+                            {
+                                id: 12,
+                                Question: "Code Example",
+                                code: "var_a = 12.2\nvar_b = int(var_a)\nprint(type(var_a))\nprint(type(var_b))\nprint(var_b)\n# Output:\n# <class 'float'>\nOutput :-type - floattype - int12"
+                            },
+                            {
+                                id: 13,
+                                text: "Now we will learn to typecast in FLOAT. This is similar to typecasting to INTEGER. See it yourself."
+                            },
+                            {
+                                id: 14,
+                                Question: "Code Example",
+                                code: "var_a = '12'\nvar_b = float(var_a)\nprint(type(var_a))\nprint(type(var_b))\nprint(var_a + var_a)\nprint(var_b + var_b)\n# Output:\n# <class 'str'>\ntype - strtype - float121224.0"
+                            },
+                            {
+                                id: 15,
+                                Question: "Code Example",
+                                code: "var_a = '12.2'\nvar_b = float(var_a)\nprint(type(var_a))\nprint(type(var_b))\n# Output:\n#Output :-type - strtype - float"
+                            },
+                            {
+                                id: 16,
+                                Question: "Code Example",
+                                code: "var_a = '12houses'\n\ntry:\n    var_b = float(var_a)\nexcept ValueError:\n    var_b = 'Error: Cannot convert to float'\n\nprint(type(var_a))\nprint(type(var_b))\n# Output:\n# <class 'str'>\n# <class 'str'>\n# Output :-ValueError: could not convert string to float: '12houses'Python does not know how to extract FLOAT from 12houses."
+                            },
+                            {
+                                id: 17,
+                                Question: "Integer to Float and Integer to String",
+                                text: "Python simply adds the decimal point when we convert INTEGER to FLOAT."
+                            },
+                            {
+                                id: 18,
+                                Question: "Code Example",
+                                code: "var_a = 12\nvar_b = float(var_a)\nprint(type(var_a))\nprint(type(var_b))\nprint(var_b)\n# Output:\n# <class 'int'>\n Output :-type - inttype - float12.0 Look carefully here that Python adds .0 to the last. Try converting a FLOAT 12.2 to an INTEGER in Python. Try and understand what is happening."
+                            }
+
+                        ]
                     },
                     {
                         id: 9,
@@ -921,21 +1032,376 @@ export const courses = [
                 ]
             },
             {
-                id: 5,
+                id: 4,
                 title: 'Operators',
                 img: img5,
                 content: [
                     {
                         id: 1,
-                        title: "",
-                        description: 'Explore how to control the flow of your programs using if statements, loops, and functions.'
+                        title: "What are Operators?",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "What are Operators?",
+                                text: "We use operators to perform some operation (calculation or change in the value of) between variables. Just like '+' in maths is an addition operator, similarly there are operators in Python."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "a = 6\nb = 5\nprint(a + b)\n# Output: 11",
+                            },
+                            {
+                                id: 3,
+                                text: "In the above example, we have added the values of the variables a and b with the help of + that is addition operator.Here, a and b are the operands while + is the operator, so the variables that are used with an operator are called operands."
+                            }
+                        ]
                     },
                     {
                         id: 2,
-                        title: "",
-                        description: 'Understand the use of break and continue statements in loops.'
+                        title: "Type of Operators",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Type of Operators",
+                                text: "Arithmetic Operators\n\nAssignment Operators\n\nComparison Operators\n\nLogical Operators\n\nIdentity Operators (will learn later)\n\nMembership Operators (will learn later)\n\nBitwise Operators (will learn later)"
+                            }
+                        ]
+                    }, {
+                        id: 3,
+                        title: "Arithmatic Operators",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Arithmatic Operators",
+                                text: "We use arithmatic operators just like we do in mathematics, to perform common calculations with numeric values (numbers)."
+                            },
+                            {
+                                id: 2,
+                                Question: "Addition(+) :-",
+                                text: "The addition operator (+) is used to add or calculate the sum of values."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "x = 25\ny = 10\nprint(x + y)\n# Output: 35"
+                            },
+                            {
+                                id: 4,
+                                Question: "Subtraction(-):-",
+                                text: "The subtraction operator (-) is used to subtract or calculate the difference in values.",
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "var1 = 5\nvar2 = 3\nprint(var1 - var2)\n# Output: 2"
+                            },
+                            {
+                                id: 3,
+                                Question: "Multiply(*) :-",
+                                text: "The multiplication operator (*) is used to multiply or calculate the product of values."
+                            },
+                            {
+                                id: 4,
+                                Question: "Code Example",
+                                code: "a = 2\nb = 3\nprint(a * b)\n# Output: 6",
+                                text: "Now you know how ARITHMATIC OPERATORS work and how do we get output in python. Do you know how the computer gives us the output?"
+                            },
+                            {
+                                id: 5,
+                                Question: "Division(/):-",
+                                text: "The division operator (/) is used to divide or calculate the quotient of division of values."
+                            },
+                            {
+                                id: 6,
+                                Question: "Code Example",
+                                code: "x = 5\ny = 2\nprint(x / y)\n# Output: 2.5"
+                            },
+                            {
+                                id: 7,
+                                Question: "Modulus(%) :-",
+                                text: "The modulus operator (%) is used to find the remainder of division of one value by another. It gives you only the remainder and not the quotient of division."
+                            },
+                            {
+                                id: 8,
+                                Question: "Code Example",
+                                code: "num = 5\nnum1 = 2\nprint(num % num1)\n# Output: 1"
+                            },
+                            {
+                                id: 9,
+                                Question: "Exponents(**) :-",
+                                text: "The exponent/exponentiation operator (**) is used to raise one number to the power of the value of the second number such that 2 raised to the power of 3 which is 8 will be written as 2**3."
+                            },
+                            {
+                                id: 10,
+                                Question: "Code Example",
+                                code: "a = 2\nb = 3\nprint(a ** b)\n# Output: 32"
+                            },
+                            {
+                                id: 11,
+                                Question: "Floor Division(//) :-",
+                                text: "The floor division operator (//) is used to calculate the largest integer quotient of a division. This means that it will only give you the quotient of division until the number can be divided. It follows the rule:-Dividend = Quotient x Divisor + Remainder. So, in floor division the answer for 3//2 is 1 and 5//8 is 0. It does not go into decimal and only gives you the highest quotient. You can think of it like division when you first learned it, you did not know how to divide with decimals so you only calculated the answer until the number could be divided."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "a = 15\nb = 2\nprint(a // b)\n# Output: 7"
+                            }
+                        ]
                     },
+                    {
+                        id: 4,
+                        title: "Assignment Operators",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Assignment Operators",
+                                text: "Assignment operators are used to assign values to variables. They ultimately give the value on the right of the operator to the variable on the left."
+                            },
+                            {
+                                id: 2,
+                                Question: "Assignment Operator(=) :-",
+                                text: "The asignment operator(=) assigns values to the left hand operand from the right side operand. (This operator gives the value of the operand on the right to the operand on the left).(Operands are values that any operator works/operates on)."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "x = 5\nprint(x)\n# Output: 5",
+                            },
+                            {
+                                id: 4,
+                                Question: "Add AND Assign Operator(+=) :-",
+                                text: "Add AND Assign Operator (+=) adds the value of right operand to the value of left hand operand and then gives the sum (result of addition) to the left operand. Here, a+=b is the same as a=a+b."
+                            },
+                            {
+                                id: 5,
+                                Question: "Code Example",
+                                code: "x = 5\ny = 10\nx += y\nprint(x)\n# Output: 15"
+                            },
+                            {
+                                id: 6,
+                                Question: "Subtract AND Assign Operator(-=) :-",
+                                text: "Subtract AND Assign Operator (-=) subtracts the value of the right operand from the left side operand and gives the result to the left operand. Here, a-=b is the same as a=a-b."
+                            },
+                            {
+                                id: 7,
+                                Question: "Code Example",
+                                code: "x = 10\ny = 5\nx -= y\nprint(x)\n# Output: 5"
+                            },
+                            {
+                                id: 8,
+                                Question: "Multiply AND Assign Operator(*=) :-",
+                                text: "Multiply AND Assign Operator (*=) multiplies the left hand operand with the right hand operand and returns the value as output, that is gives the result to the left hand operand. Here, a*=b is the same as a=a*b."
+                            },
+                            {
+                                id: 9,
+                                Question: "Code Example",
+                                code: "x = 5\ny = 10\nx *= y\nprint(x)\n# Output: 50"
+                            },
+                            {
+                                id: 10,
+                                Question: "Division AND Assign Operator(/=) :-",
+                                text: "Divide AND Assign Operator (/=) divides the left hand operand with the right hand operand value and gives the result, that is gives the value to the left hand side operand.Here, a/=b is the same as a=a/b."
+                            },
+                            {
+                                id: 11,
+                                Question: "Code Example",
+                                code: "x = 50\ny = 10\nx /= y\nprint(x)\n# Output: 5.0"
+                            },
+                            {
+                                id: 12,
+                                Question: "Modulus AND Assign Operator(%=) :-",
+                                text: "Modulus AND Assign Operator (%=) divides the value of left hand operand with the right hand one and the reminder of this division becomes the new value of the left hand side operand, that is it is given to the left hand side operator. Here, a%=b is the same as a=a%b."
+                            },
+                            {
+                                id: 13,
+                                Question: "Code Example",
+                                code: "x = 25\ny = 10\nx /= y\nprint(x)\n# Output: 2.5"
+                            },
+                            {
+                                id: 14,
+                                Question: "Exponent AND Assign Operator(**=) :-",
+                                text: "Exponent AND Assign Operator gives us the exponentiated value of the left hand operand when raised to the power of the value found on the right hand side. This value is then given to the left hand side operand. Here, a**=b is the same as a=a**b."
+                            },
+                            {
+                                id: 15,
+                                Question: "Code Example",
+                                code: "x = 5\ny = 2\nx **= y\nprint(x)\n# Output: 25"
+                            },
+                            {
+                                id: 16,
+                                Question: "Floor Division AND Assign(//=) :-",
+                                text: "Floor division AND Assign(//=) divides the value found in the left hand side with the value of the right hand side operand. The integer value becomes the left hand operand value. This means that the integer part of the quotient of division is given to the left hand side operand and it it contains the decimal part, it is ignored. Here, a//=b is the same as a=a//b."
+                            },
+                            {
+                                id: 17,
+                                Question: "Code Example",
+                                code: "x = 5\ny = 2\nx //= y\nprint(x)\n# Output: 2"
+                            }
+                        ]
+                    },
+                    {
+                        id: 5,
+                        title: "Comparison Operators",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Comparison Operators",
+                                text: "We use comparison operators to compare two values. Their answer or result is always of the Boolean Data Type.",
+                            },
+                            {
+                                id: 2,
+                                Question: "Equal(==):-",
+                                text: "To check whether two values are equal, the == operator is used. (Since we know = is used for assignment so for equality it is ==)"
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "a = 5\nb = 5\nprint(a == b)\n# Output: True"
+                            },
+                            {
+                                id: 4,
+                                Question: "Code Example",
+                                code: "a = 6\nb = 9\nprint(a == b)\n# Output: False"
+                            },
+                            {
+                                id: 5,
+                                Question: "Not Equal (!=) :-",
+                                text: "The != operator is used to check if two values are unequal or not equal ."
+                            },
+                            {
+                                id: 6,
+                                Question: "Code Example",
+                                code: "x = 10\ny = 13\nprint(x != y)\n# Output: True\n# This means that x=10 and y=13 are not equal."
+                            },
+                            {
+                                id: 7,
+                                Question: "Code Example",
+                                code: "a = 32\nb = 32\nprint(a != b)\n# Output: False\n# In the above example, both the values are equal, meaning the answer to the question \"Are the 2 values unequal?\" is false."
+                            },
+                            {
+                                id: 8,
+                                Question: "Greater than (>) :-",
+                                text: "It is the same as in mathematics, it checks whether the value on the left is greater than the value on the right. If yes, then the output is true otherwise false."
+                            },
+                            {
+                                id: 9,
+                                Question: "Code Example",
+                                code: "a = 6\nb = 4\nprint(a > b)\n# Output: True This means a=6 is greater than b=4 and so the output is seen to be true."
+                            },
+                            {
+                                id: 11,
+                                Question: "Code Example",
+                                code: "x = 7\ny = 9\nprint(x > y)\n# Output: False In this example we are saying that the value of x is greater than y, which is wrong hence the output is false."
+                            },
+                            {
+                                id: 12,
+                                Question: "Less than (<) :-",
+                                text: "It is the same as in mathematics, it checks whether the value on the left is less than the value on the right. If yes then the output is true otherwise it is false."
+                            },
+                            {
+                                "id": 13,
+                                Question: "Code Example",
+                                code: "x = 6\ny = 9\nprint(x < y)\n# Output: True In this example, x is smaller than y so the output is true."
+                            },
+                            {
+                                id: 14,
+                                Question: "Code Example",
+                                code: "a = 13\nb = 10\nprint(a < b)\n# Output: False In this example, a is greater than b so the output is false."
+                            },
+                            {
+                                id: 15,
+                                Question: "Greater than or equal to (>=):-",
+                                text: "It is the same as in mathematics, it checks whether the value on the left is greater than or equal to the value on the right. If yes then the output is true otherwise it is false."
+                            },
+                            {
+                                id: 16,
+                                Question: "Code Example",
+                                code: "a = 23\nb = 15\nprint(a >= b)\n# Output: True Here, a is greater than b so the output is true."
+                            },
+                            {
+                                id: 17,
+                                Question: "Code Example",
+                                code: "a = 12\nb = 35\nprint(a >= b)\n# Output: False Here since a is not greater than b and a is also not equal to b, the output is false."
+                            },
+                            {
+                                id: 18,
+                                Question: "Less than or equal to (<=) :-",
+                                text: "It is the same as in mathematics, it checks whether the value on the left is lesser than or equal to the value on the right. If yes then the output is true otherwise it is false."
+                            },
+                            {
+                                id: 19,
+                                Question: "Code Example",
+                                code: "x = 6\ny = 9\nprint(x <= y)\n# Output: True In the example above, x=6 is smaller than y=9 and thus, the output is true."
+                            },
+                            {
+                                id: 2,
+                                Question: "Code Example",
+                                code: "x = 8\ny = 6\nprint(x <= y)\n# Output: False Here, x is neither less than y, nor equal to y, hence the output is false."
+                            }
+                        ]
+                    }, {
+                        id: 6,
+                        title: "Logical Operators",
+                        description: [
+                            {
+                                id: 1,
+                                Question: "Logical Operators (and, or, not) :-",
+                                text: "Logical operators are used to combine conditional statements. They are used in any programming language to make decision based on multiple conditions in python, we use logical operators to determine whether a condition is True or False by taking operand values as base. Let's consider different logical operators that are used in python programming.(Logical operators help us to take decisions and make sure the required conditions are met to proceed.)"
+                            },
+                            {
+                                id: 2,
+                                Question: "and :-",
+                                text: "This operator is used to check that both the conditions it operates on must be true. If both the conditions are true, it will return true, otherwise (even if 1 condition is false or both conditions are false), the output will be False.Example : I want apples and oranges to make a fruit salad. Here, only one of them will not complete my salad, I want both."
+                            },
+                            {
+                                id: 3,
+                                Question: "Code Example",
+                                code: "a = True\nb = False\nprint(a and b and a)\n# Output: False"
+                            },
+                            {
+                                id: 4,
+                                Question: "Code Example",
+                                code: "number = int(input(\"Enter the number: \"))\nprint(number and 1)\n# Output depends on the input"
+                            },
+                            {
+                                id: 5,
+                                Question: "Hint :-",
+                                text: "Here, the number and 1 are both true so the answer is 1.If the input is 0 then the output will be 0 because onecondition is false."
+                            },
+                            {
+                                id: 6,
+                                Question: "or :-",
+                                text: "This operator is used to check that one of the conditions it operates on must be true. If both the conditions are False, it will return False, otherwise (if 1 condition is false or both conditions are true), the output will be true.Example: I want apples or oranges to make a fruit salad. Here, only one of them will be enough to complete my salad."
+                            },
+                            {
+                                id: 7,
+                                Question: "Code Example",
+                                code: "a = 4 > 5\na = 899 < 887\nprint(a or a or 7 < 8)\n# Output: True"
+                            },
+                            {
+                                id: 8,
+                                Question: "Code Example",
+                                code: "x = \"apple\"\ny = \"mango\"\nprint(x or y)\n# Output: apple"
+                            },
+                            {
+                                id:9,
+                                text:"The and and or operators will give an output of the value at the moment their answer is determined. For Example, 1 and 2 gives the output as 2 because when checking if both conditions are correct, the output or answer of and can be determined when it has checked the second condition. Similarly, for 0 and 2 the output is 0 as at the time of checking the first condition, the answer of the and operator is determined to be false since the first condition is false. For or, similar to and, 1 or 2 will produce an output of 1 as even if the first condition is true, the output to the or is determined there.0or  will give (empty String) as the output is not 0 because the output is determined at the second condition.",
+                            },
+                            {
+                                id:10,
+                                Question:"not :-",
+                                text:"This operator is used to get the opposite of the condition. So it gives the opposite output of whatever is the output of the condition."
+                            },
+                            {
+                                id: 11,
+                                Question: "Code Example",
+                                code: "a = 19\nb = 34\nc = 56\nprint(not c > b)\n# Output: False"
+                            }                            
+
+                        ]
+                    }
                 ]
+
             },
             {
                 id: 6,
@@ -1083,6 +1549,7 @@ export const courses = [
             {
                 id: 1,
                 title: 'JavaScript Introduction',
+                img: img1,
                 content: [
                     {
                         id: 1,
@@ -1097,6 +1564,7 @@ export const courses = [
             {
                 id: 2,
                 title: 'JS Varible ',
+                img: img2,
                 content: [
                     {
                         id: 1,
@@ -1111,6 +1579,7 @@ export const courses = [
 
             {
                 id: 3,
+                img: img3,
                 title: 'JS Data type',
                 content: [
                     {
@@ -1125,6 +1594,7 @@ export const courses = [
             },
             {
                 id: 4,
+                img: img4,
                 title: 'JS operation',
                 content: [
                     {
@@ -1139,6 +1609,7 @@ export const courses = [
             },
             {
                 id: 5,
+                img: img5,
                 title: 'JS If else',
                 content: [
                     {
@@ -1153,6 +1624,7 @@ export const courses = [
             },
             {
                 id: 6,
+                img: img1,
                 title: ' JS Loop',
                 content: [
                     {
@@ -1167,6 +1639,7 @@ export const courses = [
             },
             {
                 id: 7,
+                img: img2,
                 title: ' JS Arrays',
                 content: [
                     {
@@ -1181,6 +1654,7 @@ export const courses = [
             },
             {
                 id: 8,
+                img: img3,
                 title: ' JS Objects',
                 content: [
                     {
@@ -1195,6 +1669,7 @@ export const courses = [
             },
             {
                 id: 9,
+                img: img5,
                 title: ' JS Funtions',
                 content: [
                     {

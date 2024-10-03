@@ -83,7 +83,7 @@ const TopicContent = () => {
                                         >{descItem.visualize}</Typography>
                                         <Typography variant='h6'>{descItem.Example}</Typography>
                                         {descItem.code && (
-                                            <Typography sx={{ mt: 2 }} component="pre" style={{ whiteSpace: 'pre-wrap', backgroundColor: '#f5f5f5', padding: '10px', borderRadius: '5px' }}>
+                                            <Typography sx={{ mt: 2,p:4 }} component="pre" style={{ whiteSpace: 'pre-wrap', backgroundColor: '#f5f5f5', padding: '30px', borderRadius: '5px',fontSize:"19px",lineHeight:"2" }}>
                                                 {descItem.code}
                                             </Typography>
                                         )}
@@ -108,7 +108,6 @@ const TopicContent = () => {
                                             {descItem.text1}
                                         </Typography>
                                         <img scr={descItem.img}></img>
-                                        
                                     </Box>
                                 ))
                             ) : (
@@ -125,3 +124,6 @@ const TopicContent = () => {
 };
 
 export default TopicContent;
+
+
+
